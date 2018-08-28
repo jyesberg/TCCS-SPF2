@@ -226,6 +226,11 @@ li.has-children:hover .spf-sub-nav.uikit-grid {
 button.uikit-btn.uikit-btn--tertiary.tccs-button {background:transparent; color:#fff; border:3px solid #fff} 
 .spf-body .spf-text-banner.spf-text-banner--image.fluid-height {max-height:none;}
 
+.spf-body .spf-text-banner.spf-text-banner--image.spf-text-banner--gradient-tc .spf-text-banner--image-content::before, .spf-body .spf-text-banner.spf-text-banner--image-gradiant.spf-text-banner--gradient-tc .spf-text-banner--image-content::before {
+    background: linear-gradient(to right, #0066fb 0%, #4e2984 50%, #da1931 100%);
+    color: #f0f3f5;
+}
+
 .news-more-link-top {
     display: inline-block;
     margin-top:20px;
