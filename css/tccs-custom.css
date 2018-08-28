@@ -223,9 +223,11 @@ li.has-children:hover .spf-sub-nav.uikit-grid {
 .spf-body .spf-text-banner.spf-text-banner--image.banner-after-service-alerts .spf-text-banner--image-content::before {background-color:#b2001f;}
 .spf-body .spf-text-banner.spf-text-banner--image.banner-up-top-of-page .spf-text-banner--image-content::before {background-color:#b2001f;}
 
-button.uikit-btn.uikit-btn--tertiary.tccs-button {background:transparent; color:#fff; border:3px solid #fff} 
+button.uikit-btn.uikit-btn--tertiary.tccs-button {background:#b2001f; color:#fff; border:3px solid #fff} 
+button.uikit-btn.uikit-btn--tertiary.tccs-button:hover {background-color: #0042ac;}
 button.uikit-btn.uikit-btn--tccs-red {background:#b2001f;}
-button.uikit-btn.uikit-btn--tccs-red:hover {background-color: #2c1a5c;}
+button.uikit-btn.uikit-btn--tccs-red:hover {background-color: #0042ac;}
+button.uikit-btn.uikit-btn--tccs-blue:hover {background-color: #b2001f;}
 .spf-body .spf-text-banner.spf-text-banner--image.fluid-height {max-height:none;}
 
 .spf-body .spf-text-banner.spf-text-banner--image.spf-text-banner--gradient-tc .spf-text-banner--image-content::before, .spf-body .spf-text-banner.spf-text-banner--image-gradiant.spf-text-banner--gradient-tc .spf-text-banner--image-content::before {
