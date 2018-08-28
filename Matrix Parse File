@@ -24,8 +24,7 @@
 <MySource_AREA id_name="template_options" design_area="declared_vars" print="no">
     <MySource_DECLARE name="middlecolumn" value="col-md-8" type="text" description="col-md-8 for subpages with sidenav, col-md-10 col-md-offset-1 for home page and pages without sidenav"/>
     <MySource_DECLARE name="banner_colour" value="gradient-navy-violet" type="text" description="Put in either gradient-colour-colour or primary-colour"/>
-    <MySource_DECLARE name="breadcrumbs_banner_image_reference" value="./?a=1239876" type="text" description="Put in either gradient-colour-colour or primary-colour"/>
-</MySource_AREA>
+    <MySource_DECLARE name="breadcrumbs_banner_image_reference" value="./?a=1239876" type="text" description="Put in the asset number of the image to use. Format like so:./?a=1239876"/>
 
 <MySource_AREA id_name="left_nav_title" design_area="asset_lineage" print="no">
     <MySource_SET name="start_at_level" value="1" />
