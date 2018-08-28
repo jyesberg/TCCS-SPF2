@@ -1,0 +1,692 @@
+<MySource_AREA id_name="edit_plus_exit_area" design_area="exit" print="no"></MySource_AREA>
+<MySource_AREA id_name="edit_plus_token" design_area="csrf_token" print="no"></mysource_area>
+<MySource_AREA id_name="edit_plus_nested_content" design_area="nest_content" print="no" />
+<MySource_AREA id_name="edit_plus_show_if" design_area="show_if">
+  <MySource_SET name="condition" value="simple_edit_mode" />
+  <MySource_THEN>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <title>Loading Edit Mode...</title>
+        <MySource_PRINT id_name="edit_plus_nested_content" />
+      </head>
+      <body>
+        <mysource_print id_name="edit_plus_token" />
+      </body>
+    </html>
+    
+    <MySource_PRINT id_name="edit_plus_exit_area" />
+  </MySource_THEN>
+</MySource_AREA>
+
+<MySource_AREA id_name="template_options" design_area="declared_vars" print="no">
+    <MySource_DECLARE name="middlecolumn" value="col-md-8" type="text" description="col-md-8 for subpages with sidenav, col-md-10 col-md-offset-1 for home page and pages without sidenav"/>
+    <MySource_DECLARE name="banner_colour" value="gradient-navy-violet" type="text" description="Put in either gradient-colour-colour or primary-colour"/>
+</MySource_AREA>
+
+<MySource_AREA id_name="left_nav_title" design_area="asset_lineage" print="no">
+    <MySource_SET name="start_at_level" value="1" />
+    <MySource_SET name="levels_to_print" value="1" />
+    <MySource_SET name="prefix_with_home_link" value="true" />
+    <MySource_SET name="suffix_with_current_link" value="true" />
+    <MySource_SET name="prefix_with_divider" value="false" />
+    <MySource_SET name="suffix_with_divider" value="false" />
+    <MySource_DIVIDER></MySource_DIVIDER>
+    <MySource_ASSET>
+        <a href="<MySource_PRINT var="asset_link" />" class="is-active"><MySource_PRINT var="asset_short_name" /></a>
+    </MySource_ASSET>
+</MySource_AREA>
+
+<MySource_AREA id_name="global_links" design_area="declared_vars" print="no">
+    <MySource_DECLARE name="header_link" value="/" type="text" description="URL for header logo"/>
+    <MySource_DECLARE name="nes" value="#" type="text" description="URL for 'Non-English speaker?' header link"/>
+    <MySource_DECLARE name="contact" value="./?a=1219544" type="text" description="URL for Contact Us header link"/>
+    <MySource_DECLARE name="header_logo" value="./?a=1115272" type="text" description="URL for Actgov logo"/>
+    <MySource_DECLARE name="news" value="#" type="text" description="URL for News footer link"/>
+    <MySource_DECLARE name="breadcrumbs_home" value="/" type="text" description="/ for root level sites, asset number or relative path for subsites"/>
+    <MySource_DECLARE name="feedback" value="https://www.accesscanberra.act.gov.au/app/ask/" type="text" description="URL for Feedback footer link"/>
+    <MySource_DECLARE name="languages" value="#" type="text" description="URL for Languages footer link"/>
+    <MySource_DECLARE name="sitemap" value="#" type="text" description="URL for Sitemap footer link"/>
+    <MySource_DECLARE name="jobs" value="http://www.jobs.act.gov.au" type="text" description="URL for Jobs ACT footer link"/>
+    <MySource_DECLARE name="esa" value="http://www.esa.act.gov.au" type="text" description="URL for ESA footer link"/>
+    <MySource_DECLARE name="privacy" value="#" type="text" description="URL for Privacy footer link"/>
+    <MySource_DECLARE name="disclaimer" value="#" type="text" description="URL for Disclaimer footer link"/>
+    <MySource_DECLARE name="copyright" value="#" type="text" description="URL for Copyright footer link"/>
+    <MySource_DECLARE name="accessibility" value="#" type="text" description="URL for Accessibility header/footer link"/>
+    <MySource_DECLARE name="ga_code" value="UA-xxxxxxx-x" type="text" description="Google Analytics Code (necessary for analytics)"/>
+</MySource_AREA>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title><MySource_PRINT id_name="__global__" var="asset_short_name" /> - <MySource_PRINT id_name="__global__" var="site_name" /></title>
+    <MySource_AREA id_name="metadata" design_area="metadata" />
+    
+    <link rel="icon" href="./?a=1174446" type="image/x-icon">
+    <link rel="shortcut icon" href="./?a=1174446" type="image/x-icon">
+    
+    
+    <link rel="stylesheet" type="text/css" href="./?a=1115253">
+    <link rel="stylesheet" type="text/css" href="./?a=1115260">
+    <link rel="stylesheet" type="text/css" href="./?a=1124492">
+    <MySource_AREA id_name="nested_css_references" design_area="nest_content" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body class='spf-body uikit-body uikit-grid matrix'>
+    <a id="skip" href="#main">Skip to content</a>
+
+    <!-- Header -->
+    <div class="row">
+        <div class='col-md-12 no-padding'>
+            <header class="uikit-header uikit-header--light">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <a href="<MySource_PRINT id_name="global_links" var="header_link" />" title="Link to Homepage" class="uikit-header__logo-wrapper">
+                                <ul class="uikit-link-list uikit-link-list--inline">
+                                    <li class="uikit-header__logo">
+                                        <img src="<MySource_PRINT id_name="global_links" var="header_logo" />" alt="ACT Government logo" class="uikit-header__logo-image" />
+                                    </li>
+                                    <li class="uikit-header__logo">
+                                        <span class="uikit-header__logo-text"><img src="./?a=1215218"></span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row header-search-row">
+                                <div class="col-md-12">
+                                    <div class="pull-right header-menu">
+                                        <ul class="uikit-link-list uikit-link-list--inline">
+                                            <li class="">
+                                                <a href="<MySource_PRINT id_name="global_links" var="nes" />" title="Link to Non-English speaker" class="">Non-English speaker</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="<MySource_PRINT id_name="global_links" var="accessibility" />" title="Link to Accessibility" class="">Accessibility</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="<MySource_PRINT id_name="global_links" var="contact" />" title="Link to Contact Us" class="">Contact us</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form action="./?a=1239805" method="get" role="search" id="spf-top-search">
+                                        <div class="spf-input-group spf-search-box">
+                                            <span class="spf-group-element-wrapper">
+                                                <input class="uikit-text-input spf-group-element" name="query" aria-label="Global search input field" title="Search input field" id="search-box" type="text" value="" placeholder="Search" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearchGlobal').click()">
+                                            </span>
+                                            <button id="btnSearchGlobal" class="uikit-btn spf-group-element" aria-label="Global search button" title="Search"><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </header>
+        </div>
+    </div>
+    <!-- ************* -->
+
+
+    <!-- Mobile Nav -->
+    <MySource_AREA id_name="top_nav_mobile" design_area="menu_normal" print="yes" description="top navigation for mobile">
+    <MySource_SET name="level" value="top" />
+    <MySource_SET name="show_subs" value="always" />
+    <MySource_SET name="settings.class.normal" value="" />
+    <MySource_SET name="settings.class.current" value="active" />
+    <MySource_SET name="settings.class.hierarchy" value="active" />
+    <MySource_SET name="settings.class.has_children" value="has-children" />
+        <div class="row mobile-nav">
+            <div class='col-md-10 col-md-offset-1 no-padding'>
+                <nav class="spf-top-nav-mobile">
+                    <button class="showmenu uikit-btn uikit-btn--secondary uikit-btn--block"><i class="fa fa-times hidden" aria-hidden="true"></i><i class="fa fa-bars" aria-hidden="true"></i></button>
+                    <ul class="uikit-link-list uikit-link-list--inline closed">
+                        <MySource_ASSET>
+                            <li class="<MySource_PRINT var="settings.class" />">
+                                <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                                <MySource_SUB design_area="menu_normal">
+                                    <MySource_SET name="show_subs" value="always" />
+                                    <MySource_SET name="settings.class.normal" value="" />
+                                    <MySource_SET name="settings.class.current" value="active" />
+                                    <MySource_SET name="settings.class.hierarchy" value="active" />
+                                    <MySource_SET name="settings.class.has_children" value="has-children" />
+                                    <ul><!--  level two -->
+                                        <MySource_ASSET>
+                                            <li class="<MySource_PRINT var="settings.class" />">
+                                                <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                                            </li>
+                                        </MySource_ASSET>
+                                    </ul><!-- end level two -->
+                                </MySource_SUB>
+                            </li>
+                        </MySource_ASSET>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </MySource_AREA>
+    
+    <!-- end Mobile Nav -->
+
+
+    <!-- Top Nav -->
+    <MySource_AREA id_name="top_nav" design_area="menu_normal" print="no" description="Drop down menu for top level architecture">
+    <MySource_SET name="level" value="top" />
+    <MySource_SET name="show_subs" value="always" />
+    <MySource_SET name="settings.class.normal" value="" />
+    <MySource_SET name="settings.class.current" value="active" />
+    <MySource_SET name="settings.class.hierarchy" value="active" />
+    <MySource_SET name="settings.class.has_children" value="has-children" />
+        <div class="row">
+            <div class='col-md-10 col-md-offset-1 no-padding'>
+                <nav class="spf-top-nav">
+                    <ul class="uikit-link-list uikit-link-list--inline">
+                    <MySource_ASSET>
+                        <li class="<MySource_PRINT var="settings.class" />">
+                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                            <MySource_SUB design_area="menu_normal">
+                                <MySource_SET name="show_subs" value="always" />
+                                <MySource_SET name="settings.class.normal" value="" />
+                                <MySource_SET name="settings.class.current" value="active" />
+                                <MySource_SET name="settings.class.hierarchy" value="active" />
+                                <MySource_SET name="settings.class.has_children" value="has-children" />
+                                <ul><!--  level two -->
+                                    <MySource_ASSET>
+                                        <li class="<MySource_PRINT var="settings.class" />">
+                                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                                            <MySource_SUB design_area="menu_normal">
+                                            <MySource_SET name="show_subs" value="always" />
+                                            <MySource_SET name="settings.class.normal" value="" />
+                                            <MySource_SET name="settings.class.current" value="active" />
+                                            <MySource_SET name="settings.class.hierarchy" value="active" />
+                                            <MySource_SET name="settings.class.has_children" value="" />
+                                                <ul><!--  level three -->
+                                                    <MySource_ASSET>
+                                                        <li class="<MySource_PRINT var="settings.class" />">
+                                                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                                                        </li>
+                                                    </MySource_ASSET>
+                                                </ul>
+                                            </MySource_SUB>
+                                        </li>
+                                    </MySource_ASSET>
+                                </ul><!-- end level two -->
+                            </MySource_SUB>
+                        </li>
+                        </MySource_ASSET>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </MySource_AREA>
+    <!-- End Top Nav -->
+    
+    
+    <!-- Top Nav Mega -->
+    <MySource_AREA id_name="top_nav_mega" design_area="menu_normal" print="yes" description="Drop down megamenu for top level architecture">
+    <MySource_SET name="level" value="top" />
+    <MySource_SET name="show_subs" value="always" />
+    <MySource_SET name="settings.class.normal" value="" />
+    <MySource_SET name="settings.class.current" value="active" />
+    <MySource_SET name="settings.class.hierarchy" value="active" />
+    <MySource_SET name="settings.class.has_children" value="has-children" />
+    <div class="row">
+        <div class='col-md-10 col-md-offset-1 no-padding'>
+            <div class="spf-top-nav">
+                <ul class="uikit-link-list uikit-link-list--inline">
+                    <MySource_ASSET>
+                        <li class="<MySource_PRINT var="settings.class" />">
+                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                            <MySource_SUB design_area="menu_normal">
+                                <MySource_SET name="show_subs" value="always" />
+                                <MySource_SET name="settings.class.normal" value="" />
+                                <MySource_SET name="settings.class.current" value="active" />
+                                <MySource_SET name="settings.class.hierarchy" value="active" />
+                                <MySource_SET name="settings.class.has_children" value="has-children" />
+                                <div class='spf-sub-nav uikit-grid'> <!-- begin megamenu -->
+                                <hr>
+                                    <div class='row spf-sub-nav-row'>
+                                        <div class='col-md-12 no-padding'>
+                                            <div class="col-md-6">
+                                                <h2><MySource_PRINT var="asset_name" /></h2>
+                                                <p><MySource_PRINT var="asset_metadata_dcterms.description"/></p>
+                                                <!--
+                                                <div class="spf-text-banner spf-text-banner--0042ac">
+                                                    <h3>Title</h3>
+                                                    <p class="light-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+                                                -->
+
+                                            </div>
+                                            <!--
+                                            <div class="col-md-3">
+                                                <div class="spf-article-card">
+                                                    <span class="spf-article-card--title">
+                                                        <p><a href="<MySource_PRINT var="asset_metadata_box-item-link-1"/>" title="Article title"><MySource_PRINT var="asset_metadata_box-item-title-1"/></a></p>
+                                                        <p class="light-font"><MySource_PRINT var="asset_metadata_box-item-description-1"/></p>
+                                                    </span>
+                                                </div>
+                                                <div class="spf-article-card">
+                                                    <span class="spf-article-card--title">
+                                                        <p><a href="<MySource_PRINT var="asset_metadata_box-item-link-2"/>" title="Article title"><MySource_PRINT var="asset_metadata_box-item-title-2"/></a></p>
+                                                        <p class="light-font"><MySource_PRINT var="asset_metadata_box-item-description-2"/></p>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            -->
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <MySource_ASSET>
+                                                        <div class="col-md-4 equal-height">
+                                                            <a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class" />"><MySource_PRINT var="asset_name" /></a><p class="light-font"><MySource_PRINT var="asset_metadata_dcterms.description"/></p>
+                                                        </div>
+                                                    </MySource_ASSET>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end megamenu -->
+                            </MySource_SUB>
+                        </li>
+                    </MySource_ASSET>
+                </ul>   
+            </div>
+        </div>
+    </div>
+    </MySource_AREA>
+    <!-- End Top Nav Mega -->
+    
+    <!-- Top Nav Mega alternate-->
+    <MySource_AREA id_name="top_nav_mega_alternate" design_area="menu_normal" print="no" description="Drop down megamenu for top level architecture">
+    <MySource_SET name="level" value="top" />
+    <MySource_SET name="show_subs" value="always" />
+    <MySource_SET name="settings.class.normal" value="" />
+    <MySource_SET name="settings.class.current" value="active" />
+    <MySource_SET name="settings.class.hierarchy" value="active" />
+    <MySource_SET name="settings.class.has_children" value="has-children" />
+    <div class="row">
+        <div class='col-md-10 col-md-offset-1 no-padding'>
+            <div class="spf-top-nav">
+                <ul class="uikit-link-list uikit-link-list--inline">
+                    <MySource_ASSET>
+                        <li class="<MySource_PRINT var="settings.class" />">
+                            <a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_name" /></a>
+                            <MySource_SUB design_area="menu_normal">
+                                <MySource_SET name="show_subs" value="always" />
+                                <MySource_SET name="settings.class.normal" value="" />
+                                <MySource_SET name="settings.class.current" value="active" />
+                                <MySource_SET name="settings.class.hierarchy" value="active" />
+                                <MySource_SET name="settings.class.has_children" value="has-children" />
+                                <div class='spf-sub-nav uikit-grid'> <!-- begin megamenu -->
+                                <hr>
+                                    <div class='row spf-sub-nav-row'>
+                                        <div class='col-md-12 no-padding'>
+                                            <div class="col-md-3">
+                                                <h2><MySource_PRINT var="asset_name" /></h2>
+                                                <p><MySource_PRINT var="asset_metadata_dcterms.description"/></p>
+                                                <div class="spf-text-banner spf-text-banner--0042ac">
+                                                    <h3>Title</h3>
+                                                    <p class="light-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="spf-article-card">
+                                                    <span class="spf-article-card--title">
+                                                        <p><a href="<MySource_PRINT var="asset_metadata_box-item-link-1"/>" title="Article title"><MySource_PRINT var="asset_metadata_box-item-title-1"/></a></p>
+                                                        <p class="light-font"><MySource_PRINT var="asset_metadata_box-item-description-1"/></p>
+                                                    </span>
+                                                </div>
+                                                <div class="spf-article-card">
+                                                    <span class="spf-article-card--title">
+                                                        <p><a href="<MySource_PRINT var="asset_metadata_box-item-link-2"/>" title="Article title"><MySource_PRINT var="asset_metadata_box-item-title-2"/></a></p>
+                                                        <p class="light-font"><MySource_PRINT var="asset_metadata_box-item-description-2"/></p>
+                                                    </span>
+                                                </div>
+                                                <div class="spf-article-card">
+                                                    <span class="spf-article-card--title">
+                                                        <p><a href="<MySource_PRINT var="asset_metadata_box-item-link-3"/>" title="Article title"><MySource_PRINT var="asset_metadata_box-item-title-3"/></a></p>
+                                                        <p class="light-font"><MySource_PRINT var="asset_metadata_box-item-description-3"/></p>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <MySource_ASSET>
+                                                        <div class="col-md-4 equal-height">
+                                                            <a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class" />"><MySource_PRINT var="asset_name" /></a><p class="light-font"><MySource_PRINT var="asset_metadata_dcterms.description"/></p>
+                                                        </div>
+                                                    </MySource_ASSET>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end megamenu -->
+                            </MySource_SUB>
+                        </li>
+                    </MySource_ASSET>
+                </ul>   
+            </div>
+        </div>
+    </div>
+    </MySource_AREA>
+    <!-- End Top Nav Mega alternate-->
+
+    <!-- Main Section -->
+    <MySource_AREA id_name="banner_image" design_area="nest_content" />
+    
+    
+    
+    
+    <MySource_AREA id_name="breadcrumbs_banner" design_area="asset_lineage" print="no">
+    <MySource_SET name="prefix_with_home_link" value="false" />
+    <MySource_SET name="suffix_with_current_link" value="false" />
+    <MySource_SET name="prefix_with_divider" value="false" />
+    <MySource_SET name="suffix_with_divider" value="false" />
+    <MySource_DIVIDER></MySource_DIVIDER>
+        <div class="row">
+            <div class="spf-text-banner spf-text-banner--<MySource_PRINT id_name="template_options" var="banner_colour" />">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="uikit-breadcrumbs" aria-label="breadcrumb">
+                        <ul class="uikit-link-list uikit-link-list--inline">
+                            <li class=""><a href="<MySource_PRINT id_name="global_links" var="breadcrumbs_home" />" class="home">Home</a></li>
+                            <!-- PREVIOUS PAGE BREADCRUMB (only appears 3 levels down and below) -->
+                            <MySource_ASSET>
+                                <li class=""><a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_short_name" /></a></li>
+                            </MySource_ASSET>
+                            <!-- CURRENT PAGE BREADCRUMB -->
+                            <li><span class="active"><MySource_PRINT var="asset_short_name" /></span></li>
+                        </ul>   
+                    </div>
+                    <h1><MySource_PRINT id_name="__global__" var="asset_short_name" /></h1>
+                </div>
+            </div>
+        </div>
+    </MySource_AREA>
+    <hr class="col-md-12">
+    
+    <div class="row">
+        <MySource_AREA id_name="left_nav" design_area="menu_normal" print="yes">
+            <MySource_SET name="level" value="sub" />
+            <MySource_SET name="show_subs" value="on_current" />
+            <MySource_SET name="settings.class.normal" value="" />
+            <MySource_SET name="settings.class.current" value="is-curent is-active" />
+            <MySource_SET name="settings.class.hierarchy" value="active" />
+            <MySource_SET name="settings.class.has_children" value="has-children" />
+            <MySource_SET name="unwanted_asset_types" value="folder, file" />
+
+            <div class="col-lg-2 col-lg-offset-1 spf-page-content--left no-padding-top">
+                <aside class="sidebar">
+                    <nav class="local-nav" aria-label="main navigation">
+                        <h2 class="is-visuallyhidden">
+                            Menu
+                        </h2>
+                        <ul>
+                            <MySource_ASSET>
+                                <li><a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
+                                    <MySource_SUB design_area="menu_normal">
+                                        <MySource_SET name="show_subs" value="on_current" />
+                                        <MySource_SET name="settings.class.normal" value="" />
+                                        <MySource_SET name="settings.class.current" value="is-active is-current" />
+                                        <MySource_SET name="settings.class.hierarchy" value="active" />
+                                        <MySource_SET name="settings.class.has_children" value="has-children" />
+                                        <ul>
+                                            <MySource_ASSET>
+                                                <li><a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
+                                                    <MySource_SUB design_area="menu_normal">
+                                                        <MySource_SET name="show_subs" value="on_current" />
+                                                        <MySource_SET name="settings.class.normal" value="" />
+                                                        <MySource_SET name="settings.class.current" value="is-active is-current" />
+                                                        <MySource_SET name="settings.class.hierarchy" value="active" />
+                                                        <MySource_SET name="settings.class.has_children" value="has-children" />
+                                                        <ul>
+                                                            <MySource_ASSET>
+                                                                <li><a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a>
+                                                                    <MySource_SUB design_area="menu_normal">
+                                                                        <MySource_SET name="show_subs" value="on_current" />
+                                                                        <MySource_SET name="settings.class.normal" value="" />
+                                                                        <MySource_SET name="settings.class.current" value="is-active is-current" />
+                                                                        <MySource_SET name="settings.class.hierarchy" value="active" />
+                                                                        <MySource_SET name="settings.class.has_children" value="has-children" />
+                                                                        <ul>
+                                                                            <MySource_ASSET>
+                                                                                <li><a href="<MySource_PRINT var="asset_link" />" class="<MySource_PRINT var="settings.class"/>"><MySource_PRINT var="asset_name" /></a></li>
+                                                                            </MySource_ASSET>
+                                                                        </ul>
+                                                                    </MySource_SUB>
+                                                                </li>
+                                                            </MySource_ASSET>
+                                                        </ul>
+                                                    </MySource_SUB>
+                                                </li>
+                                            </MySource_ASSET>
+                                        </ul>
+                                    </MySource_SUB>
+                                </li>
+                            </MySource_ASSET>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+        </MySource_AREA>
+        <MySource_AREA id_name="left_column" design_area="nest_content" />
+
+
+
+        <div class="<MySource_PRINT id_name="template_options" var="middlecolumn" />" id="main">
+            
+
+                    
+
+                <MySource_AREA id_name="breadcrumbs_body" design_area="asset_lineage" print="no">
+                <MySource_SET name="prefix_with_home_link" value="false" />
+                <MySource_SET name="suffix_with_current_link" value="false" />
+                <MySource_SET name="prefix_with_divider" value="false" />
+                <MySource_SET name="suffix_with_divider" value="false" />
+                <MySource_DIVIDER></MySource_DIVIDER>
+                    <div class="row">
+                        <div class="uikit-breadcrumbs" aria-label="breadcrumb">
+                            <ul class="uikit-link-list uikit-link-list--inline">
+                                <li class=""><a href="<MySource_PRINT id_name="global_links" var="breadcrumbs_home" />" class="home">Home</a></li>
+                                <!-- PREVIOUS PAGE BREADCRUMB (only appears 3 levels down and below) -->
+                                <MySource_ASSET>
+                                    <li class=""><a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_short_name" /></a></li>
+                                </MySource_ASSET>
+                                <!-- CURRENT PAGE BREADCRUMB -->
+                                <li><span class="active"><MySource_PRINT var="asset_short_name" /></span></li>
+                            </ul>   
+                        </div>
+                        <h1><MySource_PRINT id_name="__global__" var="asset_short_name" /></h1>
+                    </div>
+                </MySource_AREA>
+            <MySource_AREA id_name="page_body" design_area="body" />
+
+        </div>
+        
+        <MySource_AREA id_name="right_column" design_area="nest_content" />
+        
+    </div>
+    <!-- ************* -->
+
+    <div class="row">
+        <div class="col-md-12 no-padding">
+            <div class="col-md-1 no-padding hide-overflow custodian-footer-image custodian-footer-image-left"></div>
+            <div class="col-md-10 text-center custodian-footer">
+                %globals_asset_contents:1226796%
+            </div>
+            <div class="col-md-1 no-padding hide-overflow custodian-footer-image custodian-footer-image-right"></div>
+        </div>
+    </div>
+    
+    <div class="row">
+        
+        <!-- Social Footer -->
+        <MySource_AREA id_name="mega_footer" design_area="nest_content" />
+
+        <!-- Global Footer -->
+        <footer class="uikit-grid uikit-footer spf-footer-global">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-5">
+                        <ul class="uikit-link-list uikit-link-list--inline uikit-link-list--inverted">
+                            <li>
+                                <a href="<MySource_PRINT id_name="global_links" var="accessibility" />" title="Link to Accessibility" class="">Accessibility</a>
+                            </li>
+                            <li>
+                                <a href="<MySource_PRINT id_name="global_links" var="privacy" />" title="Link to Privacy" class="">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="<MySource_PRINT id_name="global_links" var="disclaimer" />" title="Link to Disclaimer" class="">Disclaimer</a>
+                            </li>
+                            <li>
+                                <a href="<MySource_PRINT id_name="global_links" var="copyright" />" title="Link to Copyright" class="">Copyright</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <MySource_AREA id_name="footer_logos" design_area="nest_content">
+                        <MySource_SET name="type_codes"  value="page" />
+                    </MySource_AREA>
+                </div>
+            </div>
+        </footer>
+        <!-- ************* -->
+    </div>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./?a=1124467"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script>window.jQuery.ui || document.write('<script src="./?a=1124466"><\/script>')</script>
+    <!-- removing for a bit 
+    <script src="./?a=1124468"></script>
+    -->
+    <script src="https://www.search.act.gov.au/s/resources-global/js/jquery/jquery.tmpl.min.js"></script>
+    <script src="https://www.search.act.gov.au/s/resources-global/js/jquery.funnelback-completion.js"></script>
+    <script src="./?a=1159369"></script>
+    <script src="./?a=1159370"></script>
+    <script src="./?a=1159372"></script>
+    <script src="./?a=1159373"></script>
+    <script src="./?a=1159374"></script>
+    <MySource_AREA id_name="additional_javascript" design_area="nest_content" />
+
+
+   <script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '<MySource_PRINT id_name="global_links" var="ga_code" />', 'auto');
+  ga('send', 'pageview');
+
+
+if (typeof jQuery != 'undefined') {
+    var filetypes = /\.(zip|exe|dmg|pdf|doc.*|xls.*|ppt.*|mp3|txt|rar|wma|mov|avi|wmv|flv|wav|jpg|jpeg|gif|png)$/i;
+    var baseHref = '';
+    if (jQuery('base').attr('href') != undefined) baseHref = jQuery('base').attr('href');
+    var hrefRedirect = '';
+
+    jQuery('body').on('click', 'a', function(event) {
+        var el = jQuery(this);
+        var track = true;
+        var href = (typeof(el.attr('href')) != 'undefined' ) ? el.attr('href') : '';
+        var isThisDomain = href.match(document.domain.split('.').reverse()[1] + '.' + document.domain.split('.').reverse()[0]);
+        if (!href.match(/^javascript:/i)) {
+            var elPv = [];
+            var elEv = []; elEv.value=0, elEv.non_i=false;
+            if (href.match(/^mailto\:/i)) {
+                elEv.category = 'email';
+                elEv.action = 'click';
+                elEv.label = href.replace(/^mailto\:/i, '');
+                elEv.loc = href;
+            }
+            else if (href.match(filetypes)) {
+                var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+                elEv.category = 'download';
+                elEv.action = 'click-' + extension[0];
+                elEv.label = href.replace(/ /g,'-');
+                elEv.loc = baseHref + href;
+                elPv.loc = href.replace(/^.*\/\/[^\/]+/, '');
+            }
+            else if (href.match(/^https?\:/i) && !isThisDomain) {
+                elEv.category = 'external';
+                elEv.action = 'click';
+                elEv.label = href.replace(/^https?\:\/\//i, '');
+                elEv.non_i = true;
+                elEv.loc = href;
+            }
+            else if (href.match(/^tel\:/i)) {
+                elEv.category = 'telephone';
+                elEv.action = 'click';
+                elEv.label = href.replace(/^tel\:/i, '');
+                elEv.loc = href;
+            }
+            else track = false;
+
+            if (track) {
+                var ret = true;
+
+                if((elEv.category == 'external' || elEv.category == 'download') && (el.attr('target') == undefined || el.attr('target').toLowerCase() != '_blank') ) {
+                    hrefRedirect = elEv.loc;
+
+                    if (elEv.category == 'download') {
+                        relativeLabel = elEv.label.replace(/^.*\/\/[^\/]+/, '');
+                        relativeLoc = elPv.loc.replace(/^.*\/\/[^\/]+/, '');
+                        ga('send','event', elEv.category.toLowerCase(),elEv.action.toLowerCase(),relativeLabel.toLowerCase(),elEv.value,{
+                            'nonInteraction': elEv.non_i
+                        });
+                        ga('send','pageview', relativeLoc,{
+                            'nonInteraction': elEv.non_i,
+                           'hitCallback': gaHitCallbackHandler
+                        });
+                    }
+                    else {
+                        ga('send','event', elEv.category.toLowerCase(),elEv.action.toLowerCase(),elEv.label.toLowerCase(),elEv.value,{
+                            'nonInteraction': elEv.non_i,
+                            'hitCallback': gaHitCallbackHandler
+                        });
+                    }
+
+                    ret = false;
+                }
+                else {
+                    ga('send','event', elEv.category.toLowerCase(),elEv.action.toLowerCase(),elEv.label.toLowerCase(),elEv.value,{
+                        'nonInteraction': elEv.non_i
+                    });
+                }
+
+                return ret;
+            }
+        }
+    });
+
+
+
+    gaHitCallbackHandler = function() {
+        window.location.href = hrefRedirect;
+    }
+}
+
+
+</script>
+
+
+</body>
+
+</html>
