@@ -24,6 +24,7 @@
 <MySource_AREA id_name="template_options" design_area="declared_vars" print="no">
     <MySource_DECLARE name="middlecolumn" value="col-md-8" type="text" description="col-md-8 for subpages with sidenav, col-md-10 col-md-offset-1 for home page and pages without sidenav"/>
     <MySource_DECLARE name="banner_colour" value="gradient-navy-violet" type="text" description="Put in either gradient-colour-colour or primary-colour"/>
+    <MySource_DECLARE name="breadcrumbs_banner_image_reference" value="gradient-navy-violet" type="text" description="Put in either gradient-colour-colour or primary-colour"/>
 </MySource_AREA>
 
 <MySource_AREA id_name="left_nav_title" design_area="asset_lineage" print="no">
@@ -417,6 +418,42 @@
             </div>
         </div>
     </MySource_AREA>
+    
+    <MySource_AREA id_name="breadcrumbs_banner_image" design_area="asset_lineage" print="no">
+    <MySource_SET name="prefix_with_home_link" value="false" />
+    <MySource_SET name="suffix_with_current_link" value="false" />
+    <MySource_SET name="prefix_with_divider" value="false" />
+    <MySource_SET name="suffix_with_divider" value="false" />
+    <MySource_DIVIDER></MySource_DIVIDER>
+        <div class="row">
+            <div class="spf-text-banner spf-text-banner--image fluid-height spf-text-banner--<MySource_PRINT id_name="template_options" var="banner_colour" />" style="background:url(<MySource_PRINT id_name="template_options" var="breadcrumbs_banner_image_reference" />)">
+                <div class="spf-text-banner--image-content">
+                    <div class="spf-text-banner--image-content-text">
+                        <div class="col-md-10 col-md-offset-2">
+                        <div class="uikit-breadcrumbs" aria-label="breadcrumb">
+                            <ul class="uikit-link-list uikit-link-list--inline">
+                                <li class=""><a href="<MySource_PRINT id_name="global_links" var="breadcrumbs_home" />" class="home">Home</a></li>
+                                <!-- PREVIOUS PAGE BREADCRUMB (only appears 3 levels down and below) -->
+                                <MySource_ASSET>
+                                    <li class=""><a href="<MySource_PRINT var="asset_link" />"><MySource_PRINT var="asset_short_name" /></a></li>
+                                </MySource_ASSET>
+                                <!-- CURRENT PAGE BREADCRUMB -->
+                                <li><span class="active"><MySource_PRINT var="asset_short_name" /></span></li>
+                            </ul>    
+                        </div>
+                        <h1>Timetables</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </MySource_AREA>
+    
+    
+    
+    
+    
+    
     <hr class="col-md-12">
     
     <div class="row">
