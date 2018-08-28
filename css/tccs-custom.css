@@ -7,7 +7,7 @@
 .service-alerts {background:#f4f7fe;}
 .spf-body .service-alerts .spf-callout {background:#fff;}
 
-/* Polish these later */
+
 span.news, span.event {
     border: 1px solid #ccc;
     padding: 2px 10px;
@@ -58,7 +58,7 @@ li.has-children:hover .spf-sub-nav.uikit-grid {
     visibility: hidden;
 }
 
-/* Mega menu style specific to tccs */
+/* TCCS mega menu styles */
 .spf-body .spf-sub-nav hr {
      border: solid 1px #e2e2e2;
 }
@@ -68,7 +68,7 @@ li.has-children:hover .spf-sub-nav.uikit-grid {
 }
 .spf-top-nav {margin-bottom:10px;}
 
-/* reduce padding to make each nav item one line, just like the design files*/
+/* reduced padding to make each nav item one line */
 .spf-top-nav ul.uikit-link-list>li>a {padding:0 1em;}
 
 .spf-sub-nav.uikit-grid h3 {
@@ -86,7 +86,7 @@ li.has-children:hover .spf-sub-nav.uikit-grid {
 .uikit-body .spf-sub-nav.uikit-grid .spf-article-card p a:hover, .uikit-body .spf-sub-nav.uikit-grid .spf-article-card p a:active {border-bottom:none; text-decoration:none;}
 .uikit-body .spf-sub-nav.uikit-grid .spf-article-card p:first-of-type {margin:10px 0 0 0;}
 
-/* fix the selectors later */
+/* these selectors could do with some refining */
 .spf-top-nav ul.uikit-link-list>li .spf-sub-nav-row .col-md-6 a {padding:.5em 0;}
 .spf-top-nav ul.uikit-link-list>li .spf-sub-nav-row .col-md-6 p {padding:0 0 1em 0;}
 
@@ -208,7 +208,7 @@ li.has-children:hover .spf-sub-nav.uikit-grid {
 }
 
 
-/* quick classes */
+/* quick classes for banners */
 .spf-body .spf-text-banner.spf-text-banner--image.banner-after-service-alerts {
     background:url('./?a=1215209');
 }
@@ -253,9 +253,9 @@ nav.spf-top-nav-mobile>ul>li>a {font-weight:bold;}
 .currentpagenumber {display:none;}
 
 
-/* Don't know why I need this fix */
+/* need to reposition since hte skew is showing up on the top left corner */
 .spf-body .spf-text-banner.spf-text-banner--image .spf-text-banner--image-content::before, .spf-body .spf-text-banner.spf-text-banner--image-gradiant .spf-text-banner--image-content::before { left:-20px;}
-/* really dodgy quick classes */
+/* more quick classes*/
 .hidden {display:none;}
 .news-more-bottom {display:none;}
 
@@ -296,7 +296,7 @@ nav.spf-top-nav-mobile>ul>li>a {font-weight:bold;}
 }
 
 
-/* news side accordion styles (need polishing)*/
+/* news side accordion styles */
 .tccs-news-filter .uikit-accordion__title, .tccs-news-filter .uikit-body .uikit-accordion__title {
     background:none;
     margin: 0px;
@@ -338,7 +338,7 @@ aside.sidebar a.has-children:after {
     font-size: 2em;
 }
 
-/* increase z-index on the trip planner and social media tabs so the content can be interactable */
+/* increasing z-index on the trip planner and social media tabs so the content can be interactable */
 .spf-body .spf-tabs .spf-tabs-content, .spf-body .spf-tabs-2 .spf-tabs-content {
     z-index: 1;
 }
@@ -355,7 +355,7 @@ aside.sidebar a.has-children:after {
 .trip-planner-container-sub {padding:1.6em;}
 
 
-/* Trip planner styles - these need a lot of polishing still */
+/* Trip planner styles */
 .trip-planner-container {margin-top:30px;}
 .trip-planner-container .trip-planner .tab {
   background: rgba(0,0,0,.7);
@@ -381,7 +381,7 @@ aside.sidebar a.has-children:after {
   white-space: nowrap;
 }
 .toptext {top: 87%;position: relative;float:right;margin-right: 40px;}
-.topicons {/*position: relative;left: 40%;top: 10%;*/ float: right;margin-right: 40px;margin-top: 20px;}
+.topicons {float: right;margin-right: 40px;margin-top: 20px;}
 .topicons .bus {background-image:url('http://www.transport.act.gov.au/__data/assets/image/0018/1048221/Bus-icon.png');}
 .topicons .active {background-image:url('http://www.transport.act.gov.au/__data/assets/image/0017/1048220/Bike-Icon.png');}
 .topicons .lightrail {background-image:url('http://www.transport.act.gov.au/__data/assets/image/0003/1048224/tram-icon.png');}
@@ -390,20 +390,6 @@ aside.sidebar a.has-children:after {
 .toptext span {display:block;background: rgba(0,0,0,.7);color:#fff;width:330px;padding:10px;font-size:1.4em;}
 .toptext a {display:block;background: #006fba;color:#fff;width:140px;padding:10px;text-transform:uppercase;text-decoration:none;}
 .top-icons-row {height:320px;}
-
-/*@media screen and (max-width: 1000px) {
-  .trip-planner-container .trip-planner .tab .tab-label h3 {
-    padding-left: 15px;
-  }
-}
-@media screen and (min-width: 700px) and (max-width: 1230px), screen and (min-width: 1230px), screen and (min-width: 1300px) {
-  .main-content .trip-planner-container .trip-planner .tab .tab-label {
-    width: 150px;
-  }
-  .main-content .trip-planner-container .trip-planner .tab.real-time .tab-label {
-    left: 150px;
-  }
-}*/
 
 /*Trip Planner Container Redux*/
 @media screen and (max-width: 900px) {
@@ -505,28 +491,6 @@ label.checkbox-field>span.bike:before {background: url(./?a=1232160);}
 .trip-planner-container .trip-planner .tab.active .tab-label {
   background: rgba(0,0,0,.7); color:#fff;
 }
-/*@media screen and (max-width: 900px) {
-  .trip-planner-container .trip-planner .tab.real-time {
-    display: none;
-  }
-  .trip-planner-container .trip-planner .tab.planner .tab-label {
-    width: 100%;
-    background: #0057B8;
-    color: white;
-  }
-  .trip-planner-container .trip-planner .tab.planner .tab-content {
-    display: block;
-  }
-  .trip-planner-container .nxtbus-mobile {
-    display: block;
-  }
-  .trip-planner-container .nxtbus-mobile a {
-    color: #1f76da;
-    text-decoration: none;
-    border-bottom: 1px solid #1f76da;
-  }
-}*/
-
 
 .trip-planner-row {background:url('http://www.transport.act.gov.au/__data/assets/image/0005/1048091/TC-Web-Banner.jpg')30px 0px no-repeat;min-height:530px;}
 @media screen and (max-width: 500px) {
@@ -707,12 +671,6 @@ label.checkbox-field>span.bike:before {background: url(./?a=1232160);}
     box-sizing: border-box;
     float: left;
   }
-  /*.main-content .trip-planner-form .field:nth-child(2n-1) {
-    padding-right: 10px;
-  }
-  .main-content .trip-planner-form .field:nth-child(2n) {
-    padding-left: 10px;
-  }*/
   .main-content .trip-planner-form .field:nth-child(2n+3) {
     clear: left;
   }
@@ -1035,7 +993,6 @@ input[type=button], input[type=submit], input[type=reset], .uikit-btn {backgroun
 .spf-tile {background-repeat:no-repeat; background-position:10px 50%; min-height:100px;}
 
 @media only screen and (max-width:1200px) {
-    /*.spf-tile {background:none;}*/
     .spf-tile span.title {margin-left:60px;display: block;}
 }
 
