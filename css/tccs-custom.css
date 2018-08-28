@@ -1,0 +1,1090 @@
+.uikit-callout {border: 1px solid #0042ac; box-shadow:none; border-left: 6px solid #0042ac;}
+.uikit-callout.bus {}
+.uikit-callout.lightrail {border-left: 6px solid #bd0021;}
+.alert-date {}
+.alert-icons {text-align:right;}
+.more-padding {padding-left:3em;}
+.service-alerts {background:#f4f7fe;}
+.spf-body .service-alerts .spf-callout {background:#fff;}
+
+/* Polish these later */
+span.news, span.event {
+    border: 1px solid #ccc;
+    padding: 2px 10px;
+    font-size:0.75em;
+}
+
+span.buses {
+    border:1px solid #ccc;
+    padding:2px 10px;
+    background: #0042ac;
+    color:#fff;
+    font-size:0.75em;
+}
+
+span.lightrail {
+    border:1px solid #ccc;
+    padding:2px 10px;
+    background: #bd0021;
+    color:#fff;
+    font-size:0.75em;
+}
+
+.uikit-grid .news-events-date {
+    padding: 5px 0 0 25.6px;
+    font-size: 0.75em;
+}
+
+.news-events h2 {font-size:1.2em;}
+.news-events-tags {text-align:right; padding-left:0;}
+
+
+
+/* Mega menu styles (incorporate in to core css later) */
+.spf-sub-nav.uikit-grid {
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  background:#fff;
+  width:100%;
+}
+
+/* use visibility so elements don't collapse and equalheight.js works */
+li.has-children:hover .spf-sub-nav.uikit-grid {
+    visibility: visible;
+}
+
+.spf-sub-nav.uikit-grid {
+    visibility: hidden;
+}
+
+/* Mega menu style specific to tccs */
+.spf-body .spf-sub-nav hr {
+     border: solid 1px #e2e2e2;
+}
+
+.spf-top-nav ul li.active>a {
+    border-bottom: 4px solid #0042ac;
+}
+.spf-top-nav {margin-bottom:10px;}
+
+/* reduce padding to make each nav item one line, just like the design files*/
+.spf-top-nav ul.uikit-link-list>li>a {padding:0 1em;}
+
+.spf-sub-nav.uikit-grid h3 {
+    margin-top:0;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--0042ac {background-color:#0042ac;color: #f0f3f5;}
+
+.spf-top-nav ul.uikit-link-list>li .spf-sub-nav.uikit-grid .spf-article-card a {padding:0;}
+.spf-top-nav ul.uikit-link-list>li .spf-sub-nav.uikit-grid .spf-article-card {
+     border: 1px solid #d6d8ec;
+}
+.uikit-body .spf-sub-nav.uikit-grid .spf-article-card p {margin:0 0 20px 0;}
+.uikit-body .spf-sub-nav.uikit-grid .spf-article-card p a {text-decoration:underline; border-bottom:none;}
+.uikit-body .spf-sub-nav.uikit-grid .spf-article-card p a:hover, .uikit-body .spf-sub-nav.uikit-grid .spf-article-card p a:active {border-bottom:none; text-decoration:none;}
+.uikit-body .spf-sub-nav.uikit-grid .spf-article-card p:first-of-type {margin:10px 0 0 0;}
+
+/* fix the selectors later */
+.spf-top-nav ul.uikit-link-list>li .spf-sub-nav-row .col-md-6 a {padding:.5em 0;}
+.spf-top-nav ul.uikit-link-list>li .spf-sub-nav-row .col-md-6 p {padding:0 0 1em 0;}
+
+.light-font {font-weight:300;}
+
+
+
+/* Side nav styles */
+.local-nav ul li li {border:none;}
+.local-nav>ul>li:first-child {border-top:1px solid #bbbbbb;}
+.local-nav ul li:last-child {border-bottom:none;}
+
+
+
+
+
+/* loading animation from old site for news/events */
+ .loading {
+    display:none;
+    width:100px;
+    height:100px;
+    margin:30px auto;
+    position:fixed;
+    top:50%;
+    left:50%;
+}
+
+.loading.bar div{
+     width: 10px;
+     height: 30px;
+     background: black;
+     position: absolute;
+     top: 35px;
+     left: 45px;
+     opacity:0.05;
+     -webkit-animation: fadeit 1.1s linear infinite;
+     -moz-animation: fadeit 1.1s linear infinite;
+     animation: fadeit 1.1s linear infinite;
+}
+
+.loading.bar div:nth-child(1){
+     -webkit-transform: rotate(0deg) translate(0, -30px);
+     -moz-transform: rotate(0deg) translate(0, -30px);
+     transform: rotate(0deg) translate(0, -30px); 
+
+     -webkit-animation-delay:0.39s;
+     -moz-animation-delay:0.39s;
+     animation-delay:0.39s;
+} 
+
+.loading.bar div:nth-child(2){
+     -webkit-transform: rotate(45deg) translate(0, -30px);
+     -moz-transform: rotate(45deg) translate(0, -30px);
+     transform: rotate(45deg) translate(0, -30px); 
+
+     -webkit-animation-delay:0.52s;
+     -moz-animation-delay:0.52s;
+     animation-delay:0.52s;
+} 
+
+.loading.bar div:nth-child(3){
+     -webkit-transform: rotate(90deg) translate(0, -30px);
+     -moz-transform: rotate(90deg) translate(0, -30px);
+     transform: rotate(90deg) translate(0, -30px); 
+
+     -webkit-animation-delay:0.65s;
+     -moz-animation-delay:0.65s;
+     animation-delay:0.65s;
+} 
+
+.loading.bar div:nth-child(4){
+     -webkit-transform: rotate(135deg) translate(0, -30px);
+     -moz-transform: rotate(135deg) translate(0, -30px);
+     transform: rotate(135deg) translate(0, -30px); 
+
+     -webkit-animation-delay:0.78s;
+     -moz-animation-delay:0.78s;
+     animation-delay:0.78s;
+} 
+
+.loading.bar div:nth-child(5){
+     -webkit-transform: rotate(180deg) translate(0, -30px);
+     -moz-transform: rotate(180deg) translate(0, -30px);
+     transform: rotate(180deg) translate(0, -30px); 
+
+     -webkit-animation-delay:0.91s;
+     -moz-animation-delay:0.91s;
+     animation-delay:0.91s;
+} 
+
+.loading.bar div:nth-child(6){
+     -webkit-transform: rotate(225deg) translate(0, -30px);
+     -moz-transform: rotate(225deg) translate(0, -30px);
+     transform: rotate(225deg) translate(0, -30px); 
+
+     -webkit-animation-delay:1.04s;
+     -moz-animation-delay:1.04s;
+     animation-delay:1.04s;
+} 
+
+.loading.bar div:nth-child(7){
+     -webkit-transform: rotate(270deg) translate(0, -30px);
+     -moz-transform: rotate(270deg) translate(0, -30px);
+     transform: rotate(270deg) translate(0, -30px); 
+
+     -webkit-animation-delay:1.17s;
+     -moz-animation-delay:1.17s;
+     animation-delay:1.17s;
+} 
+
+.loading.bar div:nth-child(8){
+     -webkit-transform: rotate(315deg) translate(0, -30px);
+     -moz-transform: rotate(315deg) translate(0, -30px);
+     transform: rotate(315deg) translate(0, -30px); 
+
+     -webkit-animation-delay:1.3s;
+     -moz-animation-delay:1.3s;
+     animation-delay:1.3s;
+}
+
+
+/* quick classes */
+.spf-body .spf-text-banner.spf-text-banner--image.banner-after-service-alerts {
+    background:url('./?a=1215209');
+}
+
+.spf-body .spf-text-banner.spf-text-banner--image .spf-text-banner--image-content, .spf-body .spf-text-banner.spf-text-banner--image-gradiant .spf-text-banner--image-content {width:50%;}
+.spf-body .spf-text-banner.spf-text-banner--image .spf-text-banner--image-content::before, .spf-body .spf-text-banner.spf-text-banner--image-gradiant .spf-text-banner--image-content::before {height:102%;}
+
+.spf-body .spf-text-banner.spf-text-banner--image.banner-up-top-of-page {
+    background:url('./?a=1215209');
+}
+
+.spf-body .spf-text-banner.spf-text-banner--image.banner-after-service-alerts .spf-text-banner--image-content::before {background-color:#b2001f;}
+.spf-body .spf-text-banner.spf-text-banner--image.banner-up-top-of-page .spf-text-banner--image-content::before {background-color:#b2001f;}
+
+button.uikit-btn.uikit-btn--tertiary.tccs-button {background:transparent; color:#fff; border:3px solid #fff} 
+.spf-body .spf-text-banner.spf-text-banner--image.fluid-height {max-height:none;}
+
+.news-more-link-top {
+    display: inline-block;
+    margin-top:20px;
+    border:none;
+}
+
+nav.spf-top-nav-mobile>ul>li>a {font-weight:bold;}
+
+.news-listing .item h2 {margin-top:0;}
+.newspagination {
+    font-size: 1.5em;
+    color:#0042ac;
+    text-align: center;
+}
+
+.newspagination a, .newspagination b {
+    padding: 15px;
+    border-bottom:none;
+}
+
+.newspagination i {
+    color:#000;
+}
+
+.currentpagenumber {display:none;}
+
+
+/* Don't know why I need this fix */
+.spf-body .spf-text-banner.spf-text-banner--image .spf-text-banner--image-content::before, .spf-body .spf-text-banner.spf-text-banner--image-gradiant .spf-text-banner--image-content::before { left:-20px;}
+/* really dodgy quick classes */
+.hidden {display:none;}
+.news-more-bottom {display:none;}
+
+@media (max-width:767px) {
+    .news-more-top {display:none;}
+    .news-more-bottom {display:block;}
+    .spf-body .spf-text-banner.spf-text-banner--image .spf-text-banner--image-content, .spf-body .spf-text-banner.spf-text-banner--image-gradiant .spf-text-banner--image-content {
+        width:100%;
+        margin-left:0;
+    }
+    .spf-body .spf-text-banner.spf-text-banner--image .spf-text-banner--image-content::before, .spf-body .spf-text-banner.spf-text-banner--image-gradiant .spf-text-banner--image-content::before {
+        left:0;
+        transform: skewX(0deg);
+    }
+}
+
+@media (max-width:500px) {
+    .spf-body .spf-text-banner.spf-text-banner--image.banner-up-top-of-page {
+        display:none;
+}
+    .row.mobile-nav {
+        position: absolute;
+        right: 0;
+        z-index: 99;
+        top: 20px;
+    }
+    /*should do background none and make the opened nav white */
+    button.showmenu.uikit-btn.uikit-btn--secondary.uikit-btn--block {
+        color:#000;
+        background:#f0f3f5;
+        font-size:2em;
+        text-align:right;
+    }
+    nav.spf-top-nav-mobile ul li {
+        background:#fff;
+    }
+    button.showmenu.uikit-btn.uikit-btn--secondary.uikit-btn--block.white-background, .mobile-nav {background:#fff;}
+}
+
+
+/* news side accordion styles (need polishing)*/
+.tccs-news-filter .uikit-accordion__title, .tccs-news-filter .uikit-body .uikit-accordion__title {
+    background:none;
+    margin: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left:0px;
+    border-bottom:1px solid #ccc !important;
+    border-top:1px solid #ccc !important;
+}
+.tccs-news-filter h3 .uikit-accordion__title, .uikit-body .tccs-news-filter h3 .uikit-accordion__title {
+    margin-top:0px;
+    padding-top:.7em;
+    margin-bottom:0;
+    padding-bottom:.7em;
+}
+.tccs-news-filter .uikit-accordion {
+    border:none;
+}
+
+
+
+/* Side nav styles */
+.local-nav ul ul a {padding-left:2em;}
+aside.sidebar ul ul ul ul a:before {
+    content:'';
+}
+
+aside.sidebar a.has-children:after {
+    content: '';
+}
+
+aside.sidebar ul li ul li a.has-children:after {
+    content: '';
+}
+
+aside.sidebar a.has-children:after {
+    content: '\f105';
+    margin: -13px 0px 0px 10px;
+    font-size: 2em;
+}
+
+/* increase z-index on the trip planner and social media tabs so the content can be interactable */
+.spf-body .spf-tabs .spf-tabs-content, .spf-body .spf-tabs-2 .spf-tabs-content {
+    z-index: 1;
+}
+
+/* Trip planner tab styles */
+.trip-planner-container {border: 1px solid #d6d8ec; background:#f4f7fe; margin-bottom:40px;}
+.col-lg-6.trip-planner-container .spf-tabs-content {background:transparent;}
+.spf-body .col-lg-6.trip-planner-container .spf-tabs-menu .uikit-link-list>.spf-tabs-menu---item-wrapper>.spf-tabs-menu---item.active {background:transparent;}
+.spf-body .col-lg-6.trip-planner-container .spf-tabs-menu .uikit-link-list>.spf-tabs-menu---item-wrapper>.spf-tabs-menu---item {border:none; width:100%;}
+.spf-body .col-lg-6.trip-planner-container .spf-tabs-content {border-top:none}
+.spf-body .col-lg-6.trip-planner-container .spf-tabs-menu .uikit-link-list>.spf-tabs-menu---item-wrapper>.spf-tabs-menu---item {color:#5c5a5a;}
+.spf-body .col-lg-6.trip-planner-container .spf-tabs-menu .uikit-link-list>.spf-tabs-menu---item-wrapper>.spf-tabs-menu---item {border-bottom:1px solid #b6b8d1; padding-bottom:1px;}
+.spf-body .col-lg-6.trip-planner-container .spf-tabs-menu .uikit-link-list>.spf-tabs-menu---item-wrapper>.spf-tabs-menu---item.active  {border-bottom:3px solid #000; color:#000; padding-bottom:0;}
+.trip-planner-container-sub {padding:1.6em;}
+
+
+/* Trip planner styles - these need a lot of polishing still */
+.trip-planner-container {margin-top:30px;}
+.trip-planner-container .trip-planner .tab {
+  background: rgba(0,0,0,.7);
+}
+.trip-planner-container .trip-planner .tab .tab-label {
+  position: absolute;
+  top: 0px;
+  display: block;
+  height: 45px;
+  line-height: 20px;
+  box-sizing: border-box;
+  padding-top: 12.5px;
+  color: inherit;
+  text-decoration: none;
+  background: #888;
+  width: calc(100% / 3);
+  font-weight: bold;
+}
+.trip-planner-container .trip-planner .tab .tab-label h3 {
+  font-size: inherit;
+  margin: 0px;
+  padding-left: 50px;
+  white-space: nowrap;
+}
+.toptext {top: 87%;position: relative;float:right;margin-right: 40px;}
+.topicons {/*position: relative;left: 40%;top: 10%;*/ float: right;margin-right: 40px;margin-top: 20px;}
+.topicons .bus {background-image:url('http://www.transport.act.gov.au/__data/assets/image/0018/1048221/Bus-icon.png');}
+.topicons .active {background-image:url('http://www.transport.act.gov.au/__data/assets/image/0017/1048220/Bike-Icon.png');}
+.topicons .lightrail {background-image:url('http://www.transport.act.gov.au/__data/assets/image/0003/1048224/tram-icon.png');}
+.topicons a {display: inline-block;width: 60px;height: 60px;cursor: pointer;margin-right: 5px;background: no-repeat top left;}
+.topicons span {position: absolute;display: block;height: 1px;width: 1px;overflow: hidden;opacity: 0;}
+.toptext span {display:block;background: rgba(0,0,0,.7);color:#fff;width:330px;padding:10px;font-size:1.4em;}
+.toptext a {display:block;background: #006fba;color:#fff;width:140px;padding:10px;text-transform:uppercase;text-decoration:none;}
+.top-icons-row {height:320px;}
+
+/*@media screen and (max-width: 1000px) {
+  .trip-planner-container .trip-planner .tab .tab-label h3 {
+    padding-left: 15px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1230px), screen and (min-width: 1230px), screen and (min-width: 1300px) {
+  .main-content .trip-planner-container .trip-planner .tab .tab-label {
+    width: 150px;
+  }
+  .main-content .trip-planner-container .trip-planner .tab.real-time .tab-label {
+    left: 150px;
+  }
+}*/
+
+/*Trip Planner Container Redux*/
+@media screen and (max-width: 900px) {
+    .trip-planner-container .trip-planner .tab .tab-label {width:calc(100% / 3);}
+    .trip-planner-container .trip-planner .tab.real-time {display:block;}
+    .trip-planner-container .trip-planner .tab.planner .tab-content {display:none;}
+    .trip-planner-container .trip-planner .tab.active .tab-content {display:block;}
+}
+div.tab a.tab-label {border-bottom: 1px solid #abadb0;}
+.trip-planner-container .trip-planner .tab.active a.tab-label:after {content: ''; margin-left:40%; width:0px;height:0px;margin-top:2px;display:block;border-bottom: 10px solid #fdfdfd;border-left: 10px solid transparent;border-right: 10px solid transparent;}
+/*End Trip Planner Container Redux*/
+
+/*Trip Planner */
+.trip-planner-container .trip-planner .trip-planner-form .location-picker, .trip-planner-container .trip-planner .trip-planner-form .time-query-type, .trip-planner-form .autocomplete-menu, .trip-planner-container .trip-planner .trip-planner-form .location-picker, .trip-planner-container .trip-planner .trip-planner-form .date-time {color:#000;}
+.trip-planner-container .trip-planner .checkbox-field > span input[type=radio] + span {border-radius:0;margin-left:25px;}
+.trip-planner-container .trip-planner .checkbox-field em {margin-right:25px;}
+.trip-planner-container .trip-planner .checkbox-field input {
+    margin-left: 10px;
+}
+
+
+
+label.checkbox-field>span:before {content: '';display:inline-block;width: 27px;height: 27px}
+label.checkbox-field>span.bus:before {background: url(./?a=1232161);}
+label.checkbox-field>span.walk:before {background: url(./?a=1232239);}
+label.checkbox-field>span.bike:before {background: url(./?a=1232160);}
+/*End Trip Planner*/
+
+
+
+/*Service Alerts*/
+.service-alerts .tab-content .nxtbus-text .section-header h2 {display: inline-block;}
+.service-alerts .tab-content .nxtbus-text .section-header a {margin-left:10%; color:#fff;}
+.news-feed.-service-updates {margin-top:0;}
+/*End Service Alerts*/
+
+.trip-planner-container .trip-planner .tab .tab-content {
+  padding: 20px;
+  padding-top: 15px;
+  display: none;
+  box-sizing: border-box;
+}
+.sidebar .trip-planner-container .trip-planner .tab .tab-content {
+  min-height: 375px;
+}
+@media screen and (max-width: 1000px) {
+  .trip-planner-container .trip-planner .tab .tab-content {
+    padding: 15px;
+  }
+}
+.trip-planner-container .trip-planner .tab.real-time .tab-label {
+  left: 33.3%;
+}
+.trip-planner-container .trip-planner .tab.real-time .nxtbus-text {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background: url("http://www.transport.act.gov.au/__data/assets/image/0005/878126/nxtbus-logo.png?v=0.1.1") no-repeat 0px 9px;
+}
+.sidebar .trip-planner-container .trip-planner .tab.real-time .nxtbus-text {
+  min-height: 340px;
+}
+.trip-planner-container .trip-planner .tab.real-time .nxtbus-text p {
+  margin-top: 0px;
+}
+.trip-planner-container .trip-planner .tab.real-time .nxtbus-text p:last-of-type {
+  margin-bottom: 0px;
+}
+.trip-planner-container .trip-planner .tab.real-time .nxtbus-text .nxtbus-button {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+.trip-planner-container .trip-planner .tab.real-time .nxtbus-text .nxtbus-button .button {
+  display: block;
+}
+.trip-planner-container .trip-planner .tab.service-alerts .tab-label {left:66.6%;}
+.trip-planner-container .trip-planner .tab.active .tab-label {
+  background: #f2f2f2;
+  color: #0057b8;
+}
+.trip-planner-container .trip-planner .tab.active .tab-content {
+  display: block;
+}
+.trip-planner-container .trip-planner div.real-time a.tab-label {
+  background: url('http://www.transport.act.gov.au/__data/assets/image/0019/1048222/Real-time-icon.png') #888 no-repeat 10px;
+}
+.trip-planner-container .trip-planner div.service-alerts a.tab-label {
+  background: url('http://www.transport.act.gov.au/__data/assets/image/0020/1048223/Service-Alerts.png') #888 no-repeat 10px;
+}
+.trip-planner-container .trip-planner div.real-time.active a.tab-label {
+  background: url('http://www.transport.act.gov.au/__data/assets/image/0019/1048222/Real-time-icon.png') rgba(0,0,0,.7) no-repeat 10px;
+}
+.trip-planner-container .trip-planner div.service-alerts.active a.tab-label {
+  background: url('http://www.transport.act.gov.au/__data/assets/image/0020/1048223/Service-Alerts.png') rgba(0,0,0,.7) no-repeat 10px;
+}
+.trip-planner-container .trip-planner .tab.active .tab-label {
+  background: rgba(0,0,0,.7); color:#fff;
+}
+/*@media screen and (max-width: 900px) {
+  .trip-planner-container .trip-planner .tab.real-time {
+    display: none;
+  }
+  .trip-planner-container .trip-planner .tab.planner .tab-label {
+    width: 100%;
+    background: #0057B8;
+    color: white;
+  }
+  .trip-planner-container .trip-planner .tab.planner .tab-content {
+    display: block;
+  }
+  .trip-planner-container .nxtbus-mobile {
+    display: block;
+  }
+  .trip-planner-container .nxtbus-mobile a {
+    color: #1f76da;
+    text-decoration: none;
+    border-bottom: 1px solid #1f76da;
+  }
+}*/
+
+
+.trip-planner-row {background:url('http://www.transport.act.gov.au/__data/assets/image/0005/1048091/TC-Web-Banner.jpg')30px 0px no-repeat;min-height:530px;}
+@media screen and (max-width: 500px) {
+  .trip-planner-row {background:none;}
+}
+.trip-planner-form {
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+}
+.sidebar .trip-planner-form {
+  min-height: 340px;
+}
+.trip-planner-form .field {
+  width:100%;
+  margin-bottom: 15px;
+  position: relative;
+}
+.trip-planner-form .field > label,
+.trip-planner-form .field > .label,
+.trip-planner-form .field .checkbox-field {
+  font-size: 1.1em;
+  font-weight:bold;
+  line-height: 15px;
+  margin-bottom: 15px;
+  display: block;
+}
+.trip-planner-form .field input[type=text] {
+  font-size: 14px;
+  border: 0px;
+  padding: 5px 10px;
+  height: 35px;
+  line-height: 25px;
+  margin: 0px;
+  background: white;
+  box-sizing: border-box;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+  width: 100%;
+}
+.trip-planner-form .field input[type=text]:focus,
+.trip-planner-form .field input[type=text].focused,
+.focused .trip-planner-form .field input[type=text] {
+  outline: auto 3px #5588ff;
+}
+.trip-planner-form .location-picker {
+  display: block;
+  position: relative;
+}
+.trip-planner-form .location-picker .use-current-location {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  background: url('http://www.transport.act.gov.au/__data/assets/image/0008/878129/tp-gps.png?v=0.1.1') no-repeat top left;
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.trip-planner-form .location-picker .use-current-location:hover {
+  opacity: 1;
+}
+.trip-planner-form .location-picker input[type=text] {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.trip-planner-form .location-picker:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  background: url('http://www.transport.act.gov.au/__data/assets/image/0009/878130/tp-icons.png?v=0.1.1') no-repeat top left;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+.trip-planner-form .location-picker:after {
+  background-position: 0px 0px;
+}
+.trip-planner-form .location-picker.active:after {
+  background-position: -20px 0px;
+}
+.trip-planner-form .location-picker[icon=history]:after {
+  background-position: 0px -20px;
+}
+.trip-planner-form .location-picker[icon=history].active:after {
+  background-position: -20px -20px;
+}
+.trip-planner-form .location-picker[icon=transit-stop]:after {
+  background-position: 0px -40px;
+}
+.trip-planner-form .location-picker[icon=transit-stop].active:after {
+  background-position: -20px -40px;
+}
+.trip-planner-form .location-picker[icon=establishment]:after {
+  background-position: 0px -60px;
+}
+.trip-planner-form .location-picker[icon=establishment].active:after {
+  background-position: -20px -60px;
+}
+.trip-planner-form .location-picker[icon=gps]:after {
+  background-position: 0px -80px;
+}
+.trip-planner-form .location-picker[icon=gps].active:after {
+  background-position: -20px -80px;
+}
+.trip-planner-form .date-time {
+  height: 35px;
+  position: relative;
+  margin-top: 10px;
+}
+.trip-planner-form .date-time .date {
+  display: block;
+  position: relative;
+  margin-right: 95px;
+}
+.trip-planner-form .date-time .time {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 80px;
+  display: block;
+}
+.trip-planner-form .disabled {
+  opacity: 0.5;
+}
+.trip-planner-form .disabled input,
+.trip-planner-form .disabled .faux-select {
+  color: #ccc !important;
+}
+.trip-planner-form .modes {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.trip-planner-form .modes .checkbox-field {
+  display: inline-block;
+  padding-right: 10px;
+}
+.trip-planner-form .modes .checkbox-field:last-child {
+  padding-right: 0px;
+}
+.trip-planner-form .submit {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.trip-planner-form .submit .button {
+  width: 100%;
+}
+.trip-planner-container .trip-planner .button {background:#006fba;}
+
+@media screen and (max-width:700px) {
+  .trip-planner-container .trip-planner .tab .tab-content, .trip-planner-container .trip-planner .tab.planner {display:block;}
+  .trip-planner-container .trip-planner .tab .tab-label {position: static;width:100%;}
+  .trip-planner-container .trip-planner .tab {margin-top:20px;}
+  .trip-planner-container .trip-planner .tab.planner {margin-top:0;}
+  .trip-planner-container .trip-planner .tab.service-alerts {margin-bottom: 20px;}
+  .trip-planner-container .trip-planner {padding-top:0;}
+  .trip-planner-row {background-position: 30px -60px;}
+  .trip-planner-container .trip-planner .tab.planner .tab-content {display:block;}
+  .trip-planner-container .trip-planner .tab.active .tab-label, .trip-planner-container .trip-planner .tab.planner .tab-label, .trip-planner-container .trip-planner div.real-time.active a.tab-label, .trip-planner-container .trip-planner div.service-alerts.active a.tab-label {background-color:#888;}
+  .trip-planner-container .trip-planner .tab.active a.tab-label:after {display:none;} 
+}
+
+@media screen and (min-width: 700px) and (max-width: 1230px), screen and (min-width: 1230px) {
+  .main-content .trip-planner-form:after {
+    display: block;
+    content: ' ';
+    clear: both;
+  }
+  .main-content .trip-planner-form .field {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+  }
+  /*.main-content .trip-planner-form .field:nth-child(2n-1) {
+    padding-right: 10px;
+  }
+  .main-content .trip-planner-form .field:nth-child(2n) {
+    padding-left: 10px;
+  }*/
+  .main-content .trip-planner-form .field:nth-child(2n+3) {
+    clear: left;
+  }
+}
+
+input.invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0.001;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  left: -1000px;
+}
+.faux-select {
+  font-size: 14px;
+  border: 0px;
+  padding: 5px 10px;
+  height: 35px;
+  line-height: 25px;
+  margin: 0px;
+  background: white;
+  box-sizing: border-box;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.faux-select:focus,
+.faux-select.focused,
+.focused .faux-select {
+  outline: auto 3px #5588ff;
+}
+.faux-select:after {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 5px;
+  height: 5px;
+  top: 15px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #aaaaaa;
+}
+.timeEntry-control {
+  display: none;
+}
+.autocomplete-menu {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  z-index: 20;
+  margin-top: -2px;
+}
+.autocomplete-menu.has-icons ul li {
+  padding-left: 30px;
+}
+.autocomplete-menu.has-icons ul li:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: url('http://www.transport.act.gov.au/__data/assets/image/0009/878130/tp-icons.png?v=0.1.1') no-repeat top left;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+.autocomplete-menu.has-icons ul li:after {
+  background-position: 0px 0px;
+}
+.autocomplete-menu.has-icons ul li.active:after {
+  background-position: -20px 0px;
+}
+.autocomplete-menu.has-icons ul li[icon=history]:after {
+  background-position: 0px -20px;
+}
+.autocomplete-menu.has-icons ul li[icon=history].active:after {
+  background-position: -20px -20px;
+}
+.autocomplete-menu.has-icons ul li[icon=transit-stop]:after {
+  background-position: 0px -40px;
+}
+.autocomplete-menu.has-icons ul li[icon=transit-stop].active:after {
+  background-position: -20px -40px;
+}
+.autocomplete-menu.has-icons ul li[icon=establishment]:after {
+  background-position: 0px -60px;
+}
+.autocomplete-menu.has-icons ul li[icon=establishment].active:after {
+  background-position: -20px -60px;
+}
+.autocomplete-menu.has-icons ul li[icon=gps]:after {
+  background-position: 0px -80px;
+}
+.autocomplete-menu.has-icons ul li[icon=gps].active:after {
+  background-position: -20px -80px;
+}
+.autocomplete-menu ul {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+.autocomplete-menu ul li {
+  margin: 0px !important;
+  padding: 0px 10px;
+  line-height: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+.autocomplete-menu ul li.active {
+  background: #5588ff;
+  color: white;
+}
+
+/* jQuery UI Datepicker styles */
+.uikit-body #ui-datepicker-div .ui-datepicker-header a {border:none; background:none;}
+.spf-body table.ui-datepicker-calendar>thead>tr>th, .spf-body table.ui-datepicker-calendar>tbody>tr, .spf-body table.ui-datepicker-calendar>tbody>tr>td {background:none; color:#000; border:none;}
+.spf-body table.ui-datepicker-calendar>tbody>tr>td {background:none; color:#000; border:none;}
+.spf-body table>tbody>tr>td, .spf-body table>tbody>tr>th, .spf-body table>tfoot>tr>td, .spf-body table>tfoot>tr>th, .spf-body table>thead>tr>td, .spf-body table>thead>tr>th {padding:.3em;}
+.spf-body .ui-widget-header {background:white; border:none; width:330px;}
+.spf-body #ui-datepicker-div {width:340px; box-sizing:content-box}
+.spf-body .ui-datepicker-calendar {border:none;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {background:none; border:none;}
+.uikit-body .ui-datepicker-calendar a {padding:8px 12px; border-radius: 50%;}
+.uikit-body .ui-datepicker-calendar a:hover {background:#006fba; color:#fff;}
+
+.ui-datepicker-prev span,
+.ui-datepicker-next span {
+  background-image: none !important;
+}
+
+.ui-datepicker-prev:before,
+.ui-datepicker-next:before {
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  font-weight: normal;
+  align-items: center;
+  justify-content: center;
+  color:#006fba;
+  font-size:1.4em;
+}
+
+.ui-datepicker-prev:before {
+  content: "\f0d9";
+}
+
+.ui-datepicker-next:before {
+  content: "\f0da";
+}
+.uikit-body #ui-datepicker-div a.ui-datepicker-prev:hover:before, .uikit-body #ui-datepicker-div a.ui-datepicker-next:hover:before {background:#ddd; border-radius:50%;}
+
+.uikit-body #ui-datepicker-div a.ui-datepicker-prev:hover, .uikit-body #ui-datepicker-div a.ui-datepicker-next:hover {cursor:pointer;}
+
+/* Trip planner styles */
+.spf-body .trip-planner .spf-tabs-menu .uikit-link-list {width:100%; display:block;}
+.spf-body .trip-planner .spf-tabs-menu .uikit-link-list>.spf-tabs-menu---item-wrapper {width:50%; text-align:center; font-size:1.5em;}
+.accessibility-hidden {display:none;}
+
+/* add external link icon to target="_blank" anchors */
+.uikit-body #main a[target="_blank"]:after {
+    content:"\f08e";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left:5px;
+}
+
+/* Set fixed height for flickr embeds, otherwise they will set to 0px height if parent container is 0px height */
+.flickr-embed-frame {height: 360px !important;} 
+
+/* button/input submit default bg colour */
+input[type=button], input[type=submit], input[type=reset], .uikit-btn {background-color:#0042ac}
+
+
+/* accordion side nav styles */
+.spf-side-nav--first i {
+    /* content: '\f054'; */
+    transform: rotate(0);
+}
+
+.spf-side-nav--first i {
+    display: inline-block;
+    position: absolute;
+    /*right: .64em;*/
+    right: 0;
+    top: 50%;
+    margin-top: -.5em;
+}
+
+.spf-side-nav--first i {
+    content: '';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: inherit;
+    float: right;
+    transition: all .2s;
+    color: #313131;
+    line-height: 1;
+}
+
+.spf-side-nav--first.has-children a:after, .spf-side-nav--second.has-children a:after {display:none;}
+
+.spf-body .spf-side-nav--first .spf-side-nav--second>li.open>a>i, .spf-side-nav--first.open>a>i {
+    transform: rotate(90deg);
+}
+
+.spf-body .spf-side-nav--first .spf-side-nav--second>li.open>a::after, .spf-body .spf-side-nav--first.open>a::after, .spf-body .spf-side-nav--first .spf-side-nav--second>li.close>a::after, .spf-body .spf-side-nav--first.close>a::after {display:none;}
+
+.spf-side-nav li a i {display:none;}
+.spf-side-nav li.has-children a i {display:inline-block;}
+
+
+.spf-body .spf-side-nav--first .spf-side-nav--second>li>a {font-size:.875em;}
+.spf-body .spf-side-nav--first>a {font-weight:bold;}
+
+/*accordion sidenav styles border */
+.spf-body .spf-side-nav--first .spf-side-nav--second>li a {padding-left:2em; background:none;}
+.spf-body .spf-side-nav--first .spf-side-nav--second>li {border:none;}
+.spf-body .spf-side-nav--first .spf-side-nav--second {border:none;}
+.spf-body .spf-side-nav--first {border-left:none; border-right:none; border-bottom: none; border-top: 1px solid #bbbbbb;}
+.spf-body .spf-side-nav--first .spf-side-nav--second>li:first-child, .spf-body .spf-side-nav--first:first-child {border:none;  border-top: 1px solid #bbbbbb;}
+
+
+.spf-body .spf-side-nav--first .spf-side-nav--second>li.open>a, .spf-body .spf-side-nav--first.open>a {border:none;}
+
+/* Level 4/5 (3/4) side nav styles */
+.spf-body .spf-side-nav--first .spf-side-nav--second>li li a {
+    position: relative;
+    display: block;
+    padding: .5em 3em;
+    border: none;
+    border-left: solid .48em transparent;
+    font-size:.875em;
+}
+
+.spf-body .spf-side-nav--first .spf-side-nav--second>li li li a {
+    position: relative;
+    display: block;
+    padding: .5em 4em;
+    border: none;
+    border-left: solid .48em transparent;
+}
+
+.spf-body .spf-text-banner.spf-text-banner--image {overflow:hidden;}
+
+/* trip planner submit button is covering inputs above */
+.submit input[type=submit] {margin:0;}
+
+/* line up the check boxes and custom input shape */
+.trip-planner-form input[type="radio"] {
+    visibility: hidden;
+    width: 27px;
+    height: 27px;
+    line-height: 2.3em;
+}
+
+.trip-planner-form input[type="radio"]:before {
+    content: '\f096';
+    font-family: fontawesome;
+    visibility: visible;
+    color: #000;
+    font-size: 2em;
+}
+
+.trip-planner-form input[type="radio"]:checked:before {
+    font-family: fontawesome;
+    content: '\f14a';
+    color: #000;
+}
+
+.trip-planner-form .modes .checkbox-field em {vertical-align:super;}
+.hide-overflow {overflow:hidden;}
+.custodian-footer {margin-top:1em; font-size:1.2em;}
+
+@media screen and (max-width: 991px) {
+    .spf-body .spf-footer-global .align-center-sm  .spf-social-media-icon-bar, .spf-body .uikit-footer .align-center-sm  .spf-social-media-icon-bar {text-align:center;}
+    .uikit-grid .custodian-footer-image {display:none;}
+}
+.uikit-grid .custodian-footer-image {height:130px;}
+.uikit-grid .custodian-footer-image-left {background:url('./?a=1236081') no-repeat;}
+.uikit-grid .custodian-footer-image-right {background:url('./?a=1236082') no-repeat;}
+
+/* Transport toolkit tiles */
+.timetables-tile {background-image:url('./?a=1236693');}
+.map-tile {background-image:url('./?a=1236690');}
+.myway-tile {background-image:url('./?a=1236691');}
+.parkride-tile {background-image:url('./?a=1236692');}
+.lostproperty-tile {background-image:url('./?a=1236689');}
+.active-tile {background-image:url('./?a=1236688');}
+
+.spf-tile span.title {margin-left:70px; margin-top:20px;}
+.spf-tile span.icon {display:none;}
+.spf-tile {background-repeat:no-repeat; background-position:10px 50%; min-height:100px;}
+
+@media only screen and (max-width:1200px) {
+    /*.spf-tile {background:none;}*/
+    .spf-tile span.title {margin-left:60px;display: block;}
+}
+
+/*Routes by number search styles */
+#route-search-field {width:auto;}
+
+/* Routes by number table styles */
+.content_table a[href^="https://www.devmatrix.act.gov.au"] {
+    display: inline-block;
+    -webkit-appearance: none;
+    border: none;
+    background: 0 0;
+    font-size: 17px;
+    font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans",sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: #006fba;
+    padding: .8em 1.2em;
+    cursor: pointer;
+    transition: background .1s ease;
+    text-align:center;
+    width:100%;
+}
+
+.routes-by-number .content_table td {border:none;}
+
+/* Routes by number top anchor styles */
+a.topnav {
+    display:block;
+    margin:5vh 1%;
+    padding:3vh;
+    background:#eee;
+    border:none;
+}
+
+a.topnav i {
+    font-size:2em;
+    float:right;
+    color:#006fba;
+}
+
+@media only screen and (max-width:250px) {
+    a.topnav i {
+        display:none;
+    }
+}
+
+.alert-icons img {
+    height: 27px;
+}
