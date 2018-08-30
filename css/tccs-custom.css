@@ -14,7 +14,7 @@ span.news, span.event {
     font-size:0.75em;
 }
 
-span.buses {
+span.news-category-0001 {
     border:1px solid #ccc;
     padding:2px 10px;
     background: #0042ac;
@@ -22,7 +22,31 @@ span.buses {
     font-size:0.75em;
 }
 
-span.lightrail {
+span.news-category-0002 {
+    border:1px solid #ccc;
+    padding:2px 10px;
+    background: #bd0021;
+    color:#fff;
+    font-size:0.75em;
+}
+
+span.news-category-0003 {
+    border:1px solid #ccc;
+    padding:2px 10px;
+    background: #bd0021;
+    color:#fff;
+    font-size:0.75em;
+}
+
+span.news-category-0004 {
+    border:1px solid #ccc;
+    padding:2px 10px;
+    background: #46247b;
+    color:#fff;
+    font-size:0.75em;
+}
+
+span.news-category-0005 {
     border:1px solid #ccc;
     padding:2px 10px;
     background: #bd0021;
