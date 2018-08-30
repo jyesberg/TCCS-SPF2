@@ -350,7 +350,7 @@ nav.spf-top-nav-mobile>ul>li>a {font-weight:bold;}
     border:none;
 }
 
-
+nav.categories .active, nav.regions .active {font-weight:bold;}
 
 /* Side nav styles */
 .local-nav ul ul a {padding-left:2em;}
