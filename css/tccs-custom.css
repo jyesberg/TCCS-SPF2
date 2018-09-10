@@ -1080,6 +1080,11 @@ a.topnav i {
     height: 27px;
 }
 
+.three-flowing-columns {
+    columns: 3 auto;
+
+}
+
 .tccs-bottom-box .spf-article-body {margin-bottom:20px;}
 .tccs-bottom-box .spf-article-image {height:264px;}
 .big-red-border-left {border-left:10px solid #b2001f;}
