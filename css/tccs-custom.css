@@ -1031,7 +1031,8 @@ input[type=button], input[type=submit], input[type=reset], .uikit-btn {backgroun
 }
 
 /*Routes by number search styles */
-#route-search-field {width:auto;}
+#route-search-field {
+}
 
 /* Routes by number table styles */
 .content_table a[href^="https://www.devmatrix.act.gov.au"] {
@@ -1053,21 +1054,41 @@ input[type=button], input[type=submit], input[type=reset], .uikit-btn {backgroun
     width:100%;
 }
 
+ul.mini-tiles li a:after, ol.mini-tiles li a:after {
+    background: #0057b8 url(https://www.transport.act.gov.au/__data/assets/image/0007/878137/tile-arrow.png?v=0.1.1) no-repeat center center;
+    border-radius: 20px;
+    width: 25px;
+    height: 25px;
+    content: ' ';
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 0.82em;
+}
+
 .routes-by-number .content_table td {border:none;}
 
 /* Routes by number top anchor styles */
-a.topnav {
-    display:block;
-    margin:5vh 1%;
-    padding:3vh;
-    background:#eee;
-    border:none;
+.bg__light-grey {
+    background-color: #F2F2F2;
 }
-
-a.topnav i {
-    font-size:2em;
-    float:right;
-    color:#006fba;
+.d-block {
+    display: block;
+}
+.w-100 {
+    width: 100%;
+}
+.link__single-line-padded:link {
+    padding: 1em;
+    margin: .8em 0;
+    border-bottom: none;
+}
+.routes-search {
+    padding: 1em;
+    margin: .8em 0;
+}
+.routes-search .field-wrapper {
+    margin-bottom: .8em;
 }
 
 @media only screen and (max-width:250px) {
