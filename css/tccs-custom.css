@@ -1080,9 +1080,10 @@ a.topnav i {
     height: 27px;
 }
 
-.three-flowing-columns {
-    columns: 3 auto;
-
+@media (min-width: 900px) {
+    .three-flowing-columns {
+        columns: 3 auto;
+    }
 }
 
 .tccs-bottom-box .spf-article-body {margin-bottom:20px;}
