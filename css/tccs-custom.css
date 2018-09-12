@@ -284,6 +284,8 @@ nav.spf-top-nav-mobile>ul>li>a {font-weight:bold;}
     color:#000;
 }
 
+.item .row img {width:100%;}
+
 .currentpagenumber {display:none;}
 
 
