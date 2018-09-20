@@ -1116,3 +1116,83 @@ ul.mini-tiles li a:after, ol.mini-tiles li a:after {
 .tccs-bottom-box .spf-article-title a {border-bottom:none;}
 #route-search-field {display:inline-block;}
 .route-search-field-button {margin-left:1em;}
+
+/* News and Events*/
+.news-and-events {background: linear-gradient(0deg, #f4f7fe 50%, #FFF 50%);}
+.news-and-events .news-events .spf-article-box {background:#fff;}
+@media screen and (max-width:991px) {
+  .service-alerts, .news-and-events {background:#fff;}
+}
+.smfwrapper .col-lg-4:first-of-type {padding-left:0;}
+.smfwrapper .col-lg-4:last-of-type {padding-right:0;}
+
+/* gradient border on search box */
+input#search-box {
+    border-image: linear-gradient(to right, #0063a1 0%, #a91e2f 100%);
+    border-image-slice: 1;
+}
+
+.spf-search-box #btnSearchGlobal {
+  background: #a71f31;
+border: solid 2px #a71f31
+}
+
+.spf-top-nav ul.uikit-link-list > li > a {padding: 0 .9em;}
+
+/* Social Media tabs */
+.spf-body .spf-tabs-2 .spf-tabs-menu .uikit-link-list>.spf-tabs-menu---item-wrapper>.spf-tabs-menu---item {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+
+.spf-body .follow {margin-top: 15px;text-align: right;}
+.spf-body twitter-follow {}
+.spf-body .facebook-follow {display:none;}
+
+.spf-body .social-media-feeds .spf-tabs-content {background:transparent; padding-top:2em;}
+.spf-body .spf-tabs-2 .spf-tabs-menu .uikit-link-list>.spf-tabs-menu---item-wrapper>.spf-tabs-menu---item.active {background:transparent;}
+.spf-body .spf-tabs-2 .spf-tabs-menu .uikit-link-list>.spf-tabs-menu---item-wrapper>.spf-tabs-menu---item {border:none; width:100%;}
+.spf-body .spf-tabs-2 .spf-tabs-content {border-top: 1px solid #b6b8d1;}
+.spf-body .spf-tabs-2 .spf-tabs-menu .uikit-link-list>.spf-tabs-menu---item-wrapper>.spf-tabs-menu---item {color:#5c5a5a;}
+.spf-body .spf-tabs-2 .spf-tabs-menu .uikit-link-list>.spf-tabs-menu---item-wrapper>.spf-tabs-menu---item.active  {border-bottom:3px solid #000; color:#000;}
+
+
+.social-media-feeds .social-media-icon-sm {font-size:1.5em; margin-right:10px;}
+
+/* bottom divider for social media feeds */
+.row.social-media-feeds>.col-md-10 {
+    border-bottom:3px solid #f00;
+    margin-bottom:3em;
+        border-image: linear-gradient(to right, #000 0%, #000 50%, #b6b8d1 51%, #b6b8d1 100%);
+        border-image-slice: 1;
+}
+
+/* remove left padding and right padding on most lots of elements */
+.service-alerts .row .col-md-4:first-of-type {padding-left:0px;}
+.service-alerts .row .col-md-4:last-of-type {padding-right:0px;}
+.service-alerts .row .col-sm-4:first-of-type {padding-left:0px;}
+.service-alerts .row .col-sm-7:last-of-type {padding-right:0px;}
+.news-and-events .row .col-lg-3:first-of-type {padding-left:0px;}
+.news-and-events .row .col-lg-3:last-of-type {padding-right:0px;}
+.news-and-events .row .col-sm-4:first-of-type {padding-left:0px;}
+.news-and-events .row .col-sm-7:last-of-type {padding-right:0px;}
+.bottom-banner .row .col-lg-6:first-of-type {padding-left:0px;}
+.bottom-banner .row .col-lg-6:last-of-type {padding-right:0px;}
+
+/* Bottom banner styles */
+.spf-body .bottom-banner {background:#f4f7fe; padding-top:3em; padding-bottom:3em;}
+.bottom-banner .spf-article-box {background:#fff;}
+
+.red-box {background: #b2001f;}
+.red-box a {color:#fff;}
+.red-box a:hover {color:#000;}
+.red-box button {border:3px solid #fff;}
+
+.blue-box {background: #0042ac;}
+.blue-box a {color:#fff;}
+.blue-box a:hover {color:#000;}
+.blue-box button {border:3px solid #fff;}
+
+/* Footer styles */
+.spf-body .spf-footer-global, .uikit-footer {border:none;}
