@@ -246,8 +246,10 @@ li.has-children:hover .spf-sub-nav.uikit-grid {
 }
 
 .spf-body .spf-text-banner.spf-text-banner--image.banner-after-service-alerts .spf-text-banner--image-content::before {background-color:#b2001f;}
-.spf-body .spf-text-banner.spf-text-banner--image.banner-up-top-of-page .spf-text-banner--image-content::before {background-color:#b2001f;}
-
+.spf-body .spf-text-banner.spf-text-banner--image.banner-up-top-of-page .spf-text-banner--image-content::before {
+    /*background-color:#b2001f;*/
+    background: linear-gradient(to right, #0042ac 0%, #0042ac 20%, #a91e2f 100%);
+}
 button.uikit-btn.uikit-btn--tertiary.tccs-button {background:#b2001f; color:#fff; border:3px solid #fff}
 button.uikit-btn.uikit-btn--tertiary.tccs-button:hover {background-color: #0042ac;}
 button.uikit-btn.uikit-btn--tccs-red {background:#b2001f;}
