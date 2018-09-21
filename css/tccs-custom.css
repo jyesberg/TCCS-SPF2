@@ -1011,7 +1011,7 @@ input[type=button], input[type=submit], input[type=reset], .uikit-btn {backgroun
 
 .trip-planner-form .modes .checkbox-field em {vertical-align:super;}
 .hide-overflow {overflow:hidden;}
-.custodian-footer {margin-top:1em; font-size:1.2em;}
+.custodian-footer {padding-top:1em; font-size:1.2em; border-top: 2px solid #d5d3e0;}
 
 @media screen and (max-width: 991px) {
     .spf-body .spf-footer-global .align-center-sm  .spf-social-media-icon-bar, .spf-body .uikit-footer .align-center-sm  .spf-social-media-icon-bar {text-align:center;}
