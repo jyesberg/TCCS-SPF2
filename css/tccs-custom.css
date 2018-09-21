@@ -253,9 +253,8 @@ li.has-children:hover .spf-sub-nav.uikit-grid {
 
 button.uikit-btn.uikit-btn--tertiary.tccs-button {background:#b2001f; color:#fff; border:3px solid #fff} 
 button.uikit-btn.uikit-btn--tertiary.tccs-button:hover {background-color: #0042ac;}
-button.uikit-btn.uikit-btn--tertiary.transparent-button {background: transparent;color: #fff;border: 3px solid #fff;}
+button.uikit-btn.uikit-btn--tertiary.transparent-button {background: #0042ac;color: #fff;border: 3px solid #fff;}
 button.uikit-btn.uikit-btn--tertiary.transparent-button:hover {background:#000;}
-button.uikit-btn.uikit-btn--tertiary.transparent-button a {border-bottom:none;}
 button.uikit-btn.uikit-btn--tccs-red {background:#b2001f;}
 button.uikit-btn.uikit-btn--tccs-red:hover {background-color: #0042ac;}
 button.uikit-btn.uikit-btn--tccs-blue:hover {background-color: #b2001f;}
