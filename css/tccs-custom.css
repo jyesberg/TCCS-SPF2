@@ -1227,6 +1227,11 @@ input#search-box {
         border-image-slice: 1;
 }
 
+/* Hide at lower res */
+@media (max-width: 991px) {
+  .row.social-media-feeds>.col-md-10 {border:none;}
+}
+
 /* remove left padding and right padding on most lots of elements */
 .service-alerts .row .col-md-4:first-of-type {padding-left:0px;}
 .service-alerts .row .col-md-4:last-of-type {padding-right:0px;}
