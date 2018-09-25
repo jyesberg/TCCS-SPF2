@@ -1162,6 +1162,12 @@ border: solid 2px #a71f31
 .spf-body .spf-tabs-2 .spf-tabs-menu .uikit-link-list>.spf-tabs-menu---item-wrapper>.spf-tabs-menu---item {color:#5c5a5a;}
 .spf-body .spf-tabs-2 .spf-tabs-menu .uikit-link-list>.spf-tabs-menu---item-wrapper>.spf-tabs-menu---item.active  {border-bottom:3px solid #000; color:#000;}
 
+/* fixed padding at all resolutions */
+.spf-body .spf-tabs-menu .uikit-link-list>.spf-tabs-menu---item-wrapper>.spf-tabs-menu---item {
+    padding: .8em;
+    outline: 0;
+}
+
 
 .social-media-feeds .social-media-icon-sm {font-size:1.5em; margin-right:10px;}
 
