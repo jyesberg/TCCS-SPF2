@@ -1142,6 +1142,9 @@ input#search-box {
     border: solid 2px #b2001f;
 }
 
+/* Fix up alignment in IE */
+.spf-body .spf-search-box .spf-group-element, .spf-body .spf-search-box .spf-group-element:first-child, .spf-body .spf-search-box .spf-group-element:last-child {max-height:43px;}
+
 .spf-top-nav ul.uikit-link-list > li > a {padding: 0 .9em;}
 
 /* Social Media tabs */
