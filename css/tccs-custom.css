@@ -1138,8 +1138,8 @@ input#search-box {
 }
 
 .spf-search-box #btnSearchGlobal {
-  background: #a71f31;
-border: solid 2px #a71f31
+    background: #b2001f;
+    border: solid 2px #b2001f;
 }
 
 .spf-top-nav ul.uikit-link-list > li > a {padding: 0 .9em;}
