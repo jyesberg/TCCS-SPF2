@@ -245,23 +245,23 @@ li.has-children:hover .spf-sub-nav.uikit-grid {
     background:url('./?a=1239876');
 }
 
-.spf-body .spf-text-banner.spf-text-banner--image.banner-after-service-alerts .spf-text-banner--image-content::before {background-color:#b2001f;}
+.spf-body .spf-text-banner.spf-text-banner--image.banner-after-service-alerts .spf-text-banner--image-content::before {background-color:#bd0021;}
 .spf-body .spf-text-banner.spf-text-banner--image.banner-up-top-of-page .spf-text-banner--image-content::before {
-    /*background-color:#b2001f;*/
-    background: linear-gradient(to right, #0042ac 0%, #0042ac 20%, #a91e2f 100%);
+    /*background-color:#bd0021;*/
+    background: linear-gradient(to right, #0042ac 0%, #0042ac 20%, #bd0021 100%);
 }
 
-button.uikit-btn.uikit-btn--tertiary.tccs-button {background:#b2001f; color:#fff; border:3px solid #fff} 
+button.uikit-btn.uikit-btn--tertiary.tccs-button {background:#bd0021; color:#fff; border:3px solid #fff} 
 button.uikit-btn.uikit-btn--tertiary.tccs-button:hover {background-color: #0042ac;}
 button.uikit-btn.uikit-btn--tertiary.transparent-button {background: #0042ac;color: #fff;border: 3px solid #fff;}
 button.uikit-btn.uikit-btn--tertiary.transparent-button:hover {background:#000;}
-button.uikit-btn.uikit-btn--tccs-red {background:#b2001f;}
+button.uikit-btn.uikit-btn--tccs-red {background:#bd0021;}
 button.uikit-btn.uikit-btn--tccs-red:hover {background-color: #0042ac;}
-button.uikit-btn.uikit-btn--tccs-blue:hover {background-color: #b2001f;}
+button.uikit-btn.uikit-btn--tccs-blue:hover {background-color: #bd0021;}
 .spf-body .spf-text-banner.spf-text-banner--image.fluid-height {max-height:none;}
 
 .spf-body .spf-text-banner.spf-text-banner--image.spf-text-banner--gradient-tc .spf-text-banner--image-content::before, .spf-body .spf-text-banner.spf-text-banner--image-gradiant.spf-text-banner--gradient-tc .spf-text-banner--image-content::before {
-    background: linear-gradient(to right, #0066fb 0%, #4e2984 50%, #da1931 100%);
+    background: linear-gradient(to right, #0042ac 0%, #0042ac 20%, #bd0021 100%);
     color: #f0f3f5;
 }
 
@@ -1165,7 +1165,7 @@ ul.mini-tiles li a:after, ol.mini-tiles li a:after {
 
 .tccs-bottom-box .spf-article-body {margin-bottom:20px;}
 .tccs-bottom-box .spf-article-image {height:264px;}
-.big-red-border-left {border-left:10px solid #b2001f;}
+.big-red-border-left {border-left:10px solid #bd0021;}
 .big-blue-border-left {border-left:10px solid #0042ac;}
 .tccs-bottom-box .spf-article-title a {border-bottom:none;}
 #route-search-field {display:inline-block;}
@@ -1187,8 +1187,8 @@ input#search-box {
 }
 
 .spf-search-box #btnSearchGlobal {
-    background: #b2001f;
-    border: solid 2px #b2001f;
+    background: #bd0021;
+    border: solid 2px #bd0021;
 }
 
 /* Fix up alignment in IE */
@@ -1252,7 +1252,7 @@ input#search-box {
 .spf-body .bottom-banner {background:#f4f7fe; padding-top:3em; padding-bottom:3em;}
 .bottom-banner .spf-article-box {background:#fff;}
 
-.red-box {background: #b2001f;}
+.red-box {background: #bd0021;}
 .red-box a {color:#fff;}
 .red-box a:hover {color:#000;}
 .red-box button {border:3px solid #fff;}
