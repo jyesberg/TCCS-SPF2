@@ -1027,6 +1027,10 @@ input[type=button], input[type=submit], input[type=reset], .uikit-btn {backgroun
     border-left: solid .48em transparent;
 }
 
+@media (max-width:1199px) {
+  .primary-nav, .local-nav {overflow:visible;}
+}
+
 .spf-body .spf-text-banner.spf-text-banner--image {overflow:hidden;}
 
 /* trip planner submit button is covering inputs above */
