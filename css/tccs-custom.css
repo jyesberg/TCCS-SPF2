@@ -77,10 +77,14 @@ span.news-category-0005 {
 /* use visibility so elements don't collapse and equalheight.js works */
 li.has-children:hover .spf-sub-nav.uikit-grid {
     visibility: visible;
+    opacity: 1;
+    transition-delay: .5s;
 }
 
 .spf-sub-nav.uikit-grid {
     visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.1s linear;
 }
 
 /* TCCS mega menu styles */
