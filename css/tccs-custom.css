@@ -966,8 +966,9 @@ input[type=button], input[type=submit], input[type=reset], .uikit-btn {backgroun
         display: inline-block;
         width: 85%;
     }
+}
 
-    input[name="stopDesc"] + input[type="submit"] {
+input[name="stopDesc"] + input[type="submit"] {
         margin:0;
 }
 
