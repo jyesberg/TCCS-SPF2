@@ -969,7 +969,7 @@ input[type=button], input[type=submit], input[type=reset], .uikit-btn {backgroun
 }
 
 input[name="stopDesc"] + input[type="submit"] {
-        margin:0;
+        margin-top:5px;
 }
 
 /* accordion side nav styles */
@@ -1092,7 +1092,7 @@ input[name="stopDesc"] + input[type="submit"] {
 .myway-tile {background-image:url('./?a=1236691');}
 .parkride-tile {background-image:url('./?a=1236692');}
 .lostproperty-tile {background-image:url('./?a=1236689');}
-.active-tile {background-image:url('./?a=1236688');}
+.active-tile {background-image:url('./?a=1258314');}
 
 .spf-tile span.title {margin-left:70px; margin-top:20px;}
 .spf-tile span.icon {display:none;}
