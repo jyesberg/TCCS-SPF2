@@ -78,7 +78,7 @@ span.news-category-0005 {
 li.has-children:hover .spf-sub-nav.uikit-grid {
     visibility: visible;
     opacity: 1;
-    transition-delay: .5s;
+    transition-delay: .2s;
 }
 
 .spf-sub-nav.uikit-grid {
@@ -1064,15 +1064,16 @@ input[type=button], input[type=submit], input[type=reset], .uikit-btn {backgroun
 
 .trip-planner-form .modes .checkbox-field em {vertical-align:super;}
 .hide-overflow {overflow:hidden;}
-.custodian-footer {padding-top:1em; font-size:1.2em; border-top: 2px solid #d5d3e0;}
+.custodian-footer {padding-top:1em; font-size:1.2em;}
+.custodian-footer-border-top {border-top: 2px solid #d5d3e0;}
+.custodian-footer-border-bottom { border-bottom: 2px solid #d5d3e0;}
 
 @media screen and (max-width: 991px) {
     .spf-body .spf-footer-global .align-center-sm  .spf-social-media-icon-bar, .spf-body .uikit-footer .align-center-sm  .spf-social-media-icon-bar {text-align:center;}
     .uikit-grid .custodian-footer-image {display:none;}
 }
 .uikit-grid .custodian-footer-image {height:130px;}
-.uikit-grid .custodian-footer-image-left {background:url('./?a=1236081') no-repeat;}
-.uikit-grid .custodian-footer-image-right {background:url('./?a=1236082') no-repeat;}
+.uikit-grid .custodian-footer-image {background:url('./?a=1256023') no-repeat;}
 
 /* Transport toolkit tiles */
 .timetables-tile {background-image:url('./?a=1236693');}
@@ -1241,16 +1242,23 @@ input#search-box {
 }
 
 /* remove left padding and right padding on most lots of elements */
-.service-alerts .row .col-md-4:first-of-type {padding-left:0px;}
-.service-alerts .row .col-md-4:last-of-type {padding-right:0px;}
-.service-alerts .row .col-sm-4:first-of-type {padding-left:0px;}
-.service-alerts .row .col-sm-7:last-of-type {padding-right:0px;}
-.news-and-events .row .col-lg-3:first-of-type {padding-left:0px;}
-.news-and-events .row .col-lg-3:last-of-type {padding-right:0px;}
-.news-and-events .row .col-sm-4:first-of-type {padding-left:0px;}
-.news-and-events .row .col-sm-7:last-of-type {padding-right:0px;}
-.bottom-banner .row .col-lg-6:first-of-type {padding-left:0px;}
-.bottom-banner .row .col-lg-6:last-of-type {padding-right:0px;}
+@media (min-width: 1200px) {
+    .news-and-events .row .col-lg-3:first-of-type {padding-left:0px;}
+    .news-and-events .row .col-lg-3:last-of-type {padding-right:0px;}
+    .bottom-banner .row .col-lg-6:first-of-type {padding-left:0px;}
+    .bottom-banner .row .col-lg-6:last-of-type {padding-right:0px;}
+}
+
+@media (min-width: 992px) {
+    .service-alerts .row .col-md-4:first-of-type {padding-left:0px;}
+    .service-alerts .row .col-md-4:last-of-type {padding-right:0px;}
+}
+@media (min-width: 768px) {
+    .service-alerts .row .col-sm-4:first-of-type {padding-left:0px;}
+    .service-alerts .row .col-sm-7:last-of-type {padding-right:0px;}
+    .news-and-events .row .col-sm-4:first-of-type {padding-left:0px;}
+    .news-and-events .row .col-sm-7:last-of-type {padding-right:0px;}
+}
 
 /* Bottom banner styles */
 .spf-body .bottom-banner {background:#f4f7fe; padding-top:3em; padding-bottom:3em;}
@@ -1268,3 +1276,69 @@ input#search-box {
 
 /* Footer styles */
 .spf-body .spf-footer-global, .uikit-footer {border:none;}
+
+/* no padding */
+@media (min-width:768px) {
+.uikit-grid .no-padding-sm {padding:0;}
+}
+
+@media (min-width:992px) {
+.uikit-grid .no-padding-md {padding:0;}
+}
+
+@media (min-width:1200px) {
+.uikit-grid .no-padding-lg {padding:0;}
+}
+
+.uikit-grid .no-padding-left {padding-left:0;}
+.uikit-grid .no-padding-right {padding-right:0;}
+
+@media (min-width:1200px) {
+    .uikit-grid .transport-toolkit .col-lg-6.odd {padding-right:0;}
+    .uikit-grid .transport-toolkit {padding-right:0;}
+}
+
+@media (max-width:1199px) {
+    .uikit-grid .transport-toolkit .col-lg-6, .uikit-grid .transport-toolkit .col-lg-12 {padding:0;}
+}
+
+/* Route timetable styles */
+#route_direction ul li.selected {
+    cursor:default;
+    background: #ECECEC !important;
+}
+
+#route_direction ul li {
+    display: block;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    background: #c1c1c1;
+    color: #333333;
+    font-weight: bold;
+}
+
+#route_direction ul {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    height: 45px;
+}
+
+#route_direction {
+    display: block;
+}
+
+#route_direction ul li a {
+    height: 55px;
+    line-height: 55px;
+    padding: 0px 34px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    border-bottom:none;
+}
