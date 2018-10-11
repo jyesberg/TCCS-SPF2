@@ -1180,6 +1180,12 @@ ul.mini-tiles li a:after, ol.mini-tiles li a:after {
     }
 }
 
+@media (min-width: 700px) {
+    .two-flowing-columns {
+        columns: 2 auto;
+    }
+}
+
 .tccs-bottom-box .spf-article-body {margin-bottom:20px;}
 .tccs-bottom-box .spf-article-image {height:264px;}
 .big-red-border-left {border-left:10px solid #bd0021;}
