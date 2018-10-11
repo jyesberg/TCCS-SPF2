@@ -6,6 +6,7 @@
 .more-padding {padding-left:3em;}
 .service-alerts {background:#f4f7fe;}
 .spf-body .service-alerts .spf-callout {background:#fff;}
+.img-fluid { max-width: 100%; height: auto; }
 
 
 span.news, span.event {
