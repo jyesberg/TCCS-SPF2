@@ -1379,3 +1379,6 @@ a.mobile-timetable-collapse-route i {
     color:#0042ac;
     font-size:2.5em;
 }
+
+/* JP styles */
+header.mobile {display:none;}
