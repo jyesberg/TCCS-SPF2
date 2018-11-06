@@ -66,7 +66,7 @@ span.news-category-0005 {
 
 
 
-/* Mega menu styles (incorporate in to core css later) */
+/* Mega menu styles */
 .spf-sub-nav.uikit-grid {
   position: absolute;
   z-index: 999;
@@ -97,6 +97,7 @@ li.has-children:hover .spf-sub-nav.uikit-grid {
     border-bottom: 4px solid #0042ac;
 }
 .spf-top-nav {margin-bottom:10px;}
+.spf-top-nav .spf-sub-nav .spf-sub-nav-row .sub-nav-item {min-height:55px;}
 
 /* reduced padding to make each nav item one line */
 .spf-top-nav ul.uikit-link-list>li>a {padding:0 1em;}
@@ -116,7 +117,6 @@ li.has-children:hover .spf-sub-nav.uikit-grid {
 .uikit-body .spf-sub-nav.uikit-grid .spf-article-card p a:hover, .uikit-body .spf-sub-nav.uikit-grid .spf-article-card p a:active {border-bottom:none; text-decoration:none;}
 .uikit-body .spf-sub-nav.uikit-grid .spf-article-card p:first-of-type {margin:10px 0 0 0;}
 
-/* these selectors could do with some refining */
 .spf-top-nav ul.uikit-link-list>li .spf-sub-nav-row .col-md-6 a {padding:.5em 0;}
 .spf-top-nav ul.uikit-link-list>li .spf-sub-nav-row .col-md-6 p {padding:0 0 1em 0;}
 
@@ -238,7 +238,7 @@ li.has-children:hover .spf-sub-nav.uikit-grid {
 }
 
 
-/* quick classes for banners */
+/* Banners */
 .spf-body .spf-text-banner.spf-text-banner--image.banner-after-service-alerts {
     background:url('./?a=1239878');
 }
@@ -299,9 +299,10 @@ nav.spf-top-nav-mobile>ul>li>a {font-weight:bold;}
 .currentpagenumber {display:none;}
 
 
-/* need to reposition since hte skew is showing up on the top left corner */
+/* need to reposition since the skew is showing up on the top left corner */
 .spf-body .spf-text-banner.spf-text-banner--image .spf-text-banner--image-content::before, .spf-body .spf-text-banner.spf-text-banner--image-gradiant .spf-text-banner--image-content::before { left:-20px;}
-/* more quick classes*/
+
+/* more classes*/
 .hidden {display:none;}
 .news-more-bottom {display:none;}
 
@@ -328,7 +329,7 @@ nav.spf-top-nav-mobile>ul>li>a {font-weight:bold;}
         z-index: 99;
         top: 20px;
     }
-    /*should do background none and make the opened nav white */
+    /*background none and make the opened nav white? */
     button.showmenu.uikit-btn.uikit-btn--secondary.uikit-btn--block {
         color:#000;
         background:#f0f3f5;
@@ -384,7 +385,7 @@ aside.sidebar a.has-children:after {
     font-size: 2em;
 }
 
-/* increasing z-index on the trip planner and social media tabs so the content can be interactable */
+/* increase z-index on the trip planner and social media tabs so the content can be interactable */
 .spf-body .spf-tabs .spf-tabs-content, .spf-body .spf-tabs-2 .spf-tabs-content {
     z-index: 1;
 }
@@ -1381,4 +1382,4 @@ a.mobile-timetable-collapse-route i {
 }
 
 /* JP styles */
-.mobile-header-row, header.mobile {display:none;}
+.mobile-header-row {display:none;}
